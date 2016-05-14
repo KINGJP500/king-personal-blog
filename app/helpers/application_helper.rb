@@ -15,6 +15,6 @@ module ApplicationHelper
             strikethrough: true,
             superscript: true
         }
-        Redcarpet::Markdown.new(render, options).render(content).html_save
+        Redcarpet::Markdown.new(render, options).render(content).html_safe
     end
 end
