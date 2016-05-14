@@ -8,7 +8,7 @@ default: &default
   adapter: mysql2
   encoding: utf8
   username: kingproadmin
-  password: Sul*fUr/500%@irona
+  password: <%= ENV['RDS_PASSWORD'] %>
   host: localhost
   port: 3309
   socket: MySQL
