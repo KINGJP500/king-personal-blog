@@ -1,0 +1,64 @@
+<footer>
+    <div class='footer-above'>
+        <div class="container">
+            <div class="join-us">
+                <div class="row">
+                    <%= content_tag :div, class: "footer-col col-xs-12 col-md-12" do %>
+                        <h1>JOIN US</h1>
+                        <%= content_tag :form, class: "form" do %>
+                            <%= content_tag :div, class: "form-group" do %>
+                                <%= content_tag :div, class: "footer-col col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4" do %>
+                                    <%= content_tag :label, class: "control-label" do  %> Input addons <% end %>
+                                    <%= content_tag :div, class: "input-group" do%>
+                                        <%= content_tag :span, class: "input-group-addon" do %><%= fa_icon "envelope-o fa-fw" %><% end %>
+                                        <%= content_tag :input, type: "text", class: "form-control", placeholder: "sample@outlook.com" do %><% end %>
+                                        <%= content_tag :span, class: "input-group-btn" do %>
+                                            <%= content_tag :button, class: "btn btn-default", type: "button" do %>Submit <% end %>
+                                        <% end %>
+                                    <% end %>
+                                <% end %>
+                            <% end %>
+                        <% end %>
+                    <% end %>
+                </div>
+            </div>
+            <div class="social-icon">
+                <div class="row">
+                    <%= content_tag :div, class: "footer-col col-md-4" do %>
+                        <%= content_tag :h3 do %>Location<% end %>
+                        <%= content_tag :p do %>Turks and Caicos Islands<br>Providenciales<br>Five Cays, Sub Division<br>Tel: +1(649)3426483<br>Tel: +1(649)2466787<% end %>
+                    <% end %>
+                    <%= content_tag :div, class: "footer-col col-md-4" do %>
+                        <%= content_tag :h3 do %>Around the Web<% end %>
+                        <%= content_tag :ul, class: "list-inline" do %>
+                            <%= content_tag(:li, link_to((fa_icon("google-plus-square fa-2x")), "http://google.com", :class  => 'btn-social btn-outline', :id => "my-id")) %>
+                            <%= content_tag(:li, link_to((fa_icon("facebook-square fa-2x")), "http://google.com", :class  => 'btn-social btn-outline', :id => "my-id")) %>
+                            <%= content_tag(:li, link_to((fa_icon("twitter-square fa-2x")), "http://google.com", :class  => 'btn-social btn-outline', :id => "my-id")) %>
+                            <%= content_tag(:li, link_to((fa_icon("github-square fa-2x")), "http://google.com", :class  => 'btn-social btn-outline', :id => "my-id")) %>
+                            <%= content_tag(:li, link_to((fa_icon("linkedin-square fa-2x")), "http://google.com", :class  => 'btn-social btn-outline', :id => "my-id")) %>
+                            <%= content_tag(:li, link_to((fa_icon("instagram fa-2x")), "http://google.com", :class  => 'btn-social btn-outline', :id => "my-id")) %>
+                        <% end %>
+                    <% end %>
+                    <%= content_tag :div, class: "footer-col col-md-4" do %>
+                        <%= content_tag :h3 do %>Location<% end %>
+                        <%= content_tag :p do %>Turks and Caicos Islands<br>Providenciales<br>Five Cays sub division<br>Tel: +1(649)3426483<br>Tel: +1(649)2466787<% end %>
+                    <% end %>
+                </div>
+            </div>
+    </div>
+    <%= content_tag :div, class: "footer-below" do %>
+        <%= content_tag :div, class: "container" do %>
+            <%= content_tag :div, class: "row" do %>
+                <%= content_tag :div, class: " footer-col col-xs-4 col-md-3 col-md-offset-3" do %>
+                    <%= content_tag :p do %>&copy; - My Ruby on Rails Application<% end %>
+                <% end %>
+                <%= content_tag :div, class: "col-xs-4 col-md-2" do %>
+                    <%= content_tag :p do %>Terms & policy <% end %>
+                <% end%>
+                <%= content_tag :div, class: "col-xs-4 col-md-1" do %>
+                    <%= content_tag :p do %>Copyright<% end %>
+                <% end %>
+            <% end %>
+        <% end %>
+    <% end %>
+</footer>

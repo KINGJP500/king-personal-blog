@@ -1,0 +1,46 @@
+<%= content_tag :div, class: "services-carousel" do %>
+    <div id="my-carousel" class="carousel slide" data-ride="carousel">
+        <%= content_tag :ol, class: "carousel-indicators" do %>
+            <li data-target="#my-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#my-carousel" data-slide-to="1"></li>
+            <li data-target="#my-carousel" data-slide-to="2"></li>
+        <%  end %>
+        <%= content_tag :div, class: "carousel-inner" do %>
+            <%= content_tag :div, class: "item active" do %>
+                <%= image_tag("doctype-hi-res.jpg", alt: 'First slide', class: "img-responsive") %>
+                <%= content_tag :div, class: "carousel-caption" do %>
+                    <%= content_tag :h3 do %>Caption heading 1<% end %>
+                    <%= content_tag :p do %>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<% end %>
+                <% end %>
+            <% end %>
+            <%= content_tag :div, class: "item" do %>
+                <%= image_tag("doctype-hi-res.jpg", alt: 'Second slide', class: "img-responsive") %>
+                <%= content_tag :div, class: "carousel-caption" do %>
+                    <%= content_tag :h3 do %>Caption heading 3<% end %>
+                    <%= content_tag :p do %>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<% end %>
+                <% end %>
+            <% end %>
+            <%= content_tag :div, class: "item" do %>
+                <% image_tag("doctype-hi-res.jpg", alt: 'Third slide', class: "img-responsive") %>
+                <%= content_tag :div, class: "carousel-caption" do %>
+                    <%= content_tag :h3 do %>Caption heading 3<% end %>
+                    <%= content_tag :p do %>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<% end %>
+                <% end %>
+            <% end %>
+        <% end %>
+        <div class="left carousel-control" href="#my-carousel", data-slide="prev">
+            <%= content_tag :span, class: "glyphicon glyphicon-chevron-left" do %><% end %>
+        </div>
+        <divl class="right carousel-control" href="#my-carousel", data-slide="next">
+            <%= content_tag :span, class: "glyphicon glyphicon-chevron-right" do %><% end %>
+        </div>
+        <%= content_tag :div, class: "carousel-content" do %>
+            <%= content_tag :h1 do %>Ruby on rails<% end %>
+            <%= content_tag :p, class: "lead" do %>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<% end %>
+            <%= content_tag :p, class: "m-button" do %>
+                <%= link_to ('Learn more &raquo;'), {:href => 'http://asp.net'}, :class => "btn btn-primary btn-lg" %>
+                <%= link_to ('Learn more &raquo;'), {:href => 'http://asp.net'}, :class => "btn btn-primary btn-lg" %>
+            <% end %>
+        <% end %>
+    </div>
+<% end %>

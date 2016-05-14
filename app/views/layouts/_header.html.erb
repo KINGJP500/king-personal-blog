@@ -1,0 +1,28 @@
+<header>
+    <div class="navbar navbar-inverse navbar-fixed-top navbar-scroll-changed" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" >
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <%= link_to image_tag("kudos-logo-active.png", alt: "New Think Tank"), root_path, :class => 'websiteLogo' %>
+                <%= link_to 'KINJ JP', root_path, :class => 'websiteTitle' %>
+                <!--<a id="logo" class="navbar-brand" href="http://localhost:60185">
+                    <img src="#" alt="king jp.com" />
+                </a>-->
+            </div>
+            <div class="navbar-collapse collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li><%=link_to "Home",  root_path %></li>
+                    <li><%=link_to "Portfolio", portfolio_path %></li>
+                    <li><%=link_to "Work", works_path %></li>
+                    <li><%=link_to "Services", services_path %></li>
+                    <li><%=link_to  "Contact", contacts_path %></li>
+                    <li><%#=link_to  'Contact', {:controller => 'feedbacks', :action => 'contacts'}%></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>

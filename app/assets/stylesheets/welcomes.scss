@@ -1,0 +1,253 @@
+// Place all the styles related to the welcomes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+hr.star-light{
+    border-color: white;
+}
+hr.star-light{
+    padding: 0;
+    border: none;
+    border-top: solid 3px;
+    text-align: center;
+    max-width: 200px;
+    margin: 25px auto 30px;
+}
+
+/* the home carousel of the page */
+.home-carousel {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 50px;
+    margin-bottom: auto;
+    padding-bottom: 19px;
+    #my-carousel{
+       height: 500px;
+       img{
+          width: 100%;
+          height: 500px;
+      }
+   }
+   .home-carousel-content {
+       height: 100px;
+       width: 100%;
+       position: absolute;
+       top: 50%;
+       margin-top: -193px;
+       text-align: center;
+       color: #ff6a00;
+   }
+   h1{
+     font-family: 'Orbitron', sans-serif;
+     font-weight: 200;
+     font-size: 50px;
+   }
+   .carousel-caption{
+       color: blue;
+   }
+}
+
+
+.btn{
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-radius: 100%!important;
+    font-size: 40px;
+    color: green;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+/*This the service-icon content of the web development */
+.service-icon{
+    padding: 50px 0;
+    h1{
+       text-align: center;
+   }
+   .web-develop{
+       text-align: center;
+       :hover i.fa.fa-desktop{
+           color: #ff0000;
+       }
+   }
+   p{
+       text-align: center;
+   }
+   .photography{
+       text-align: center;
+       :hover i.fa.fa-windows{
+           color: #00ff90;
+       }
+   }
+   .web-application{
+       text-align: center;
+       :hover i.fa.fa-code{
+           color: #ff006e;
+       }
+   }
+}
+
+
+/* The top article of the page content */
+.top-article{
+    background-color: #0026ff;
+    article{
+        padding: 100px 0 0;
+        max-width: 640px;
+        margin: 0 auto;
+        text-align: center;
+        p{
+           text-align: center;
+       }
+       h1{
+            text-align: center;
+        }
+        .phone-emulator{
+           height: 411px;
+           width: 100%;
+           background-image: url();
+           background-position: center bottom;
+           background-repeat: no-repeat;
+           position: relative;
+           top: 200px;
+           margin-top: -159px;
+           -moz-transform: all 0.3s ease;
+           -o-transofrm: all 0.3s ease;
+           -webkit-transform: all 0.3s ease;
+           transform: all 0.3s ease;
+           -webkit-transform-style: preserve-3d;
+           transform-style: preserve-3d;
+           text-align: center;
+       }
+    }
+}/*
+
+
+/*This is the first home work picture of my design*/
+.home-work-pic{
+    padding: 240px 0 150px 0;
+    margin-bottom: 100px;
+    background-color: #00ff90;
+    h1{
+        text-align: center;
+    }
+    /*The picture is being parallex*/
+    figure{
+        margin-bottom: 20px;
+        padding: 0 10px;
+        position: relative;
+        opacity: 0;
+        -moz-transform: translateX(30px);
+        -ms-transform: translateX(30px);
+        -o-transform: translateX(30px);
+        -webkit-transform: translateX(30px);
+        transform: translateX(30px);
+        -moz-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        -webkit-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+        overflow: hidden;
+        cursor: pointer;
+
+        &.is-showing{
+            opacity: 1;
+            -moz-transform: translateX(0px);
+            -ms-trasform: translateX(0px);
+            -o-transform: translateX(0px);
+            -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+        }
+        img{
+            display: block;
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            -o-transform: scale(1);
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+        &:hover
+            figcaption{
+                left: 0%;
+              img{
+                -moz-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                -o-transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+                }
+            }
+    }
+    figcaption{
+    position: absolute;
+    bottom: 10px;
+    left: -850%;
+    background: black;
+    color: white;
+    font-size: 10px;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    padding: 2px 8px;
+    }
+    article{
+       padding: 20px 0 0;
+       max-width: 640px;
+       margin: 0 auto;
+       text-align: center;
+   }
+}
+
+/* The bottom homepage article of the page */
+.bottom-article{
+    position: relative;
+    padding: 100px 0;
+    article{
+       padding: 100px 0;
+       max-width: 640px;
+       margin: 0 auto;
+       text-align: center;
+       position: relative;
+       background-color: green;
+   }
+}
+
+/*The pc-carousel sliding from left to right */
+.desk-carousel-emulator{
+    height: 100%;
+    width: 100%;
+    background-image: url();
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.bottom-region{
+    padding: 240px 0 150px 0;
+    text-align: center;
+    background-color: deepskyblue;
+    p{
+       text-align: center;
+   }
+   h1{
+      text-align: center;
+  }
+}

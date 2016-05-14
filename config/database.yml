@@ -1,0 +1,35 @@
+# SQLite version 3.x
+#   gem install sqlite3
+#
+#   Ensure the SQLite 3 gem is defined in your Gemfile
+#   gem 'sqlite3'
+#
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  username: kingproadmin
+  password: Sul*fUr/500%@irona
+  host: localhost
+  port: 3309
+  socket: MySQL
+
+development:
+  <<: *default
+  database: kingpro_development
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  <<: *default
+  database: kingpro_test
+
+production:
+  <<: *default
+  adapter: mysql2
+  encoding: utf8
+  username: kingpro
+  password: <%= ENV['RDS_PASSWORD'] %>
+  host: <%= ENV['RDS_HOSTNAME'] %>
+  port: <%= ENV['RDS_PORTNAME'] %>
+  database: kingpro_production

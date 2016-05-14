@@ -1,0 +1,90 @@
+<%= content_tag :div, class: "contact-carousel" do %>
+    <div id="my-carousel" class="carousel slide" data-ride="carousel">
+        <%= content_tag :ol, class: "carousel-indicators" do %>
+            <li data-target="#my-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#my-carousel" data-slide-to="1"></li>
+            <li data-target="#my-carousel" data-slide-to="2"></li>
+        <% end %>
+        <%= content_tag :div, class: "carousel-inner" do %>
+            <%= content_tag :div, class: "item active" do %>
+                <%= image_tag("doctype-hi-res.jpg", alt: 'First slide', class: "img-responsive") %>
+                <%= content_tag :div, class: "carousel-caption" do %>
+                    <%= content_tag :h3 do %>Caption heading 1<% end %>
+                    <%= content_tag :p do %>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<% end %>
+                <% end %>
+            <% end %>
+            <%= content_tag :div, class: "item" do %>
+                <%= image_tag("doctype-hi-res.jpg", alt: 'Second slide', class: "img-responsive") %>
+                <%= content_tag :div, class: "carousel-caption" do %>
+                    <%= content_tag :h3 do %>Caption heading 2<% end %>
+                    <%= content_tag :p do %>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<% end %>
+                <% end %>
+            <% end %>
+            <%= content_tag :div, class: "item" do %>
+                <%= image_tag("doctype-hi-res.jpg", alt: 'Third slide', class: "img-responsive") %>
+                <%= content_tag :div, class: "carousel-caption" do %>
+                    <%= content_tag :h3 do %>Caption heading 3<% end %>
+                    <%= content_tag :p do %>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<% end%>
+                <% end %>
+            <% end %>
+        <% end %>
+        <div class="left carousel-control" href="#my-carousel" data-slide="prev">
+            <%= content_tag :span, class: "glyphicon glyphicon-chevron-left" do %><% end %>
+        </div>
+        <div class="right carousel-control" href="#my-carousel" data-slide="next">
+            <%= content_tag :span, class: "glyphicon glyphicon-chevron-right" do %><% end %>
+        </div>
+        <%= content_tag :div, class: "carousel-content" do %>
+            <%= content_tag :h1 do %>Ruby on Rails<% end %>
+            <%= content_tag :p, class: "lead" do %>Rails is web framework for applicatioon<% end %>
+            <%= content_tag :p, class: "m-button" do %>
+                <%= content_tag(:li, link_to((fa_icon("fa-angle-double-down")), "http://google.com", :class => 'btn btn-circle page-scroll', :id => "my-id")) %>
+            <% end %>
+        <% end %>
+    </div>
+<% end %>
+
+<!-- the why choosing us contact section -->
+<div class="choosing-contact">
+    <%= content_tag :div, class: "container" do %>
+        <%= content_tag :h2 do %>Why Choosing me<% end %>
+        <%= content_tag :div, class: "row" do %>
+            <%= content_tag :div, class: "col-xs-12 col-sm-6 col-md-4" do %>
+                <%= content_tag :h1 do %>UI UX DESIGN<% end %>
+                <%= content_tag :p do %>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<% end %>
+            <% end %>
+            <%= content_tag :div, class: "col-xs-12 col-sm-6 col-md-4" do%>
+                <%= content_tag :h1 do %>IOS & Android<% end %>
+                <%= content_tag :p do %>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<% end %>
+            <% end %>
+            <%= content_tag :div, class: "col-xs-12 col-sm-6 col-md-4" do %>
+                <%= content_tag :h1 do %>Quality Assurance<% end %>
+                <%= content_tag :p do %>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<% end %>
+            <% end %>
+        <% end %>
+    <% end %>
+</div>
+
+<!-- the contact section -->
+<div class="contacts-form below">
+    <%= content_tag :div, class: "container" do %>
+        <%= content_tag :h2 do %>CONTACT US AND GET A FREE QUOTE<% end %>
+        <%= content_tag :div, class: "row" do %>
+            <%= content_tag :div, class: "col-xs-12 col-sm-12 col-md-10 col-md-offset-1" do %>
+                <%= render 'feedbacks/form' %>
+            <% end %>
+        <% end %>
+    <% end %>
+</div>

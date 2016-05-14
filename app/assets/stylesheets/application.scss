@@ -1,0 +1,29 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require font-awesome
+ *= require animate
+ */
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+ @import "footer";
+ @import "welcomes";
+ @import "header";
+ @import "scaffolds";
+ @import "feedbacks";
+ @import url(https://fonts.googleapis.com/css?family=Lateef&subset=latin,arabic);
+ @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700,300italic&subset=latin,cyrillic,greek,vietnamese);
+ @import url(https://fonts.googleapis.com/css?family=Lora:400,400italic&subset=latin,latin-ext);
+ @import url(https://fonts.googleapis.com/css?family=Romanesco&subset=latin,latin-ext);/*this is for writing text*/
+ @import url(https://fonts.googleapis.com/css?family=Orbitron);
+ @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500,300);
+ @import url(https://fonts.googleapis.com/css?family=Orbitron);

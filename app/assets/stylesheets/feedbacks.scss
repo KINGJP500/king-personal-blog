@@ -1,0 +1,49 @@
+// Place all the styles related to the feedbacks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+/* the choosing contact section of the contact page */
+.choosing-contact{
+    padding: 20px auto;
+    h2{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+    }
+}
+
+/* the contacts form below of the contacts page */
+.contacts-form.below{
+    padding: 25px auto;
+    h2{
+        text-align: center;
+    }
+    form{
+        fieldset{
+            legend{
+                text-align: center;
+            }
+            #inputName.form-control{
+                text-align: center;
+            }
+            #inputEmail.form-control{
+                text-align: center;
+            }
+            #inputPhoneNumber.form-control{
+                text-align: center;
+            }
+            #form-name, #form-email, #form-description, #form-submit, #form-phone_number{
+                /*padding: 25px;*/
+            }
+            #submit-btn{
+                text-align: center;
+            }
+        }
+    }
+}
