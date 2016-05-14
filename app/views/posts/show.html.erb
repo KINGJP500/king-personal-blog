@@ -1,14 +1,23 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
+<header>
+    <p><%= @post.created_at.strftime('%A, %B, %d') %></p>
+    <strong>Title:</strong>
+    <%= @post.title %>
+    <hr>
+</header>
+
 
 <p>
   <strong>Description:</strong>
-  <%= @post.description %>
+  <%= markdown @post.description %>
 </p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>
+<div class="share-box">
+    <p>Share The Do List</p>
+    <a onclick="javascript:window.open('http:/twitter.com/share?text=<%= @post.title %> by @trillvenzini - &amp; url=<%= url_for([@post, {only_path: false}]) %>', '_blank', 'width=800', height=500, top=200, left=300');void(0);">
+        <i class="fa fa-twitter"></i>
+    </a>
+</div>

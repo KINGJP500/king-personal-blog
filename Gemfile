@@ -16,6 +16,10 @@ gem 'coffee-rails', '~> 4.1.0'
 
 gem 'sprockets', '2.11.0'
 
+gem 'redcarpet', '~> 3.3', '>= 3.3.4'
+
+gem 'pygments.rb', '~> 0.6.3'
+
 gem 'devise'
 
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
