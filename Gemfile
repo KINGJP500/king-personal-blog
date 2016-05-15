@@ -26,6 +26,8 @@ gem 'sprockets', '2.11.0'
 
 gem 'redcarpet', '~> 3.3', '>= 3.3.4'
 
+gem 'friendly_id', '~> 5.1'
+
 gem 'pygments.rb', '~> 0.6.3'
 
 gem 'devise'

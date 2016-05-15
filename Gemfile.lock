@@ -78,6 +78,8 @@ GEM
     font-awesome-rails (4.5.0.1)
       railties (>= 3.2, < 5.1)
     formatador (0.2.5)
+    friendly_id (5.1.0)
+      activerecord (>= 4.0.0)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     guard (2.13.0)
@@ -244,6 +246,7 @@ DEPENDENCIES
   devise
   execjs (~> 2.6)
   font-awesome-rails (~> 4.5, >= 4.5.0.1)
+  friendly_id (~> 5.1)
   guard-livereload
   jbuilder (~> 2.0)
   jquery-rails
