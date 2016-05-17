@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   resources :posts
 
+  get '*path' => redirect( ' / ' )
     #
   #get 'feedbacks/contacts'
   #
