@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :works
 
   resources :posts
 
+  get '*path' => redirect( ' / ' )
     #
   #get 'feedbacks/contacts'
   #
