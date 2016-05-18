@@ -13,15 +13,18 @@ class FeedbacksController < ApplicationController
         @feedback = Feedback.new(feedback_params)
         #@feedback = Feedback.new(params[:contact])
         @feedback.request = request
-        @feedback.save
-        if @feedback.deliver
-            #flash.now[:error] = nil
-            format.html { redirect_to contacts_path, notice: 'User was successfully created.'}
-        else
-            format.html {render json: user.errors, status: :unprocessable_entity}
-            #flash.now[:error] = 'Cannot send message.'
-            #render :new
+        respond_to do |format|
+            @feedback.save
+            if @feedback.deliver
+                #flash.now[:error] = nil
+                format.html { redirect_to contacts_path, notice: 'User was successfully created.'}
+            else
+                format.html {render json: user.errors, status: :unprocessable_entity}
+                #flash.now[:error] = 'Cannot send message.'
+                #render :new
+            end
         end
+
 
         #redirect_to feedbacks_contacts_path
         #respond_to do |format|
