@@ -10,11 +10,11 @@ class FeedbacksController < ApplicationController
     end
 
     def create
-        #@feedback = Feedback.new(feedback_params)
-        @feedback = Feedback.new(params[:contact])
+        @feedback = Feedback.new(feedback_params)
+        #@feedback = Feedback.new(params[:contact])
         @feedback.request = request
         @feedback.save
-        if @contact.deliver
+        if @feedback.deliver
             flash.now[:error] = nil
         else
             flash.now[:error] = 'Cannot send message.'
