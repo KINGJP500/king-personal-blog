@@ -15,12 +15,12 @@
             </div>
             <div class="navbar-collapse collapse navbar-right">
                 <ul class="nav navbar-nav">
-                    <%=link_to "Home",  <root_pat></root_pat>h %>
-                    <%=link_to "<Portfoli></Portfoli>o", portfolio_path %>
-                    <%=link_to "Works", works_path %></li>
-                    <%=link_to "Services", services_path %>
-                    <%=link_to "Articles", posts_path %>
-                    <%=link_to  "Contact", contac    ts_path %>
+                    <%= link_to "Home",  root_path %>
+                    <%= link_to "Portfolio", portfolio_path %>
+                    <%= link_to "Works", works_path %></li>
+                    <%= link_to "Services", services_path %>
+                    <%= link_to "Articles", posts_path %>
+                    <%= link_to  "Contact", contacts_path %>
                     <% if user_signed_in? %>
                         <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
                     <% end %>
