@@ -37,13 +37,61 @@
         <%= content_tag :div, class: " carousel-content", :id => "portfolio-content" do %>
             <!-- the portfolio-content carousel-content pages -->
         <% end %>
-        <!--<%= content_tag :div, class: "carousel-content" do %>
+        <%= content_tag :div, class: "carousel-content" do %>
             <%= content_tag :h1 do %>Ruby on Rails<% end %>
             <%= content_tag :p, class: "lead" do %>Rails is a web framework for application<% end %>
             <%= content_tag :p, class: "m-button" do %>
                 <%= link_to ('Learn more &raquo;'), {:href => 'http://asp.net'}, :class => "btn btn-primary btn-lg" %>
                 <%= link_to ('Learn more &raquo;'), {:href => 'http://asp.net'}, :class => "btn btn-primary btn-lg" %>
             <% end %>
-        <% end %>-->
+        <% end %>
     </div>
+<% end %>
+
+<div class="port-content">
+    <%= content_tag :article do %>
+        <%= content_tag :h1 do %>Section <% end %>
+        <hr>
+        <%= content_tag :p, class: "biography" do %>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+           has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+           took a galley of type and scrambled it to make a type specimen book. It has survived not only
+           five centuries,<br>
+           but also the leap into electronic typesetting, remaining essentially unchanged.
+           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+           has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+           took a galley of type and scrambled it to make a type specimen book. It has survived not only
+           five centuries,<br>
+           but also the leap into electronic typesetting, remaining essentially unchanged.
+           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+           has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+           took a galley of type and scrambled it to make a type specimen book. It has survived not only
+           five centuries,
+           but also the leap into electronic typesetting, remaining essentially unchanged.<% end %>
+    <% end %>
+</div>
+
+<%= content_tag :div, class: "larges-window" do %>
+    <%= content_tag :div, class: "window-tint" do %>
+        <%= content_tag :div, class: "promo-text" do %>
+            Fall Suits<strong><span>from</span>$99</strong><a href="" class="window-cta">Shop Now</a>
+        <% end %>
+    <% end %>
+<% end %>
+
+<%= content_tag :article do %>
+    <%= content_tag :h1 do %>Section <% end %>
+        <hr>
+    <%= content_tag :p do %>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+        has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+        took a galley of type and scrambled it to make a type specimen book. It has survived not only
+        five centuries,<br>
+        but also the leap into electronic typesetting, remaining essentially unchanged.
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+        has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+        took a galley of type and scrambled it to make a type specimen book. It has survived not only
+        five centuries,<br>
+        but also the leap into electronic typesetting, remaining essentially unchanged.
+    <% end %>
 <% end %>
