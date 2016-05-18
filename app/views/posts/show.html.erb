@@ -20,12 +20,34 @@
         </div>
     <% end %>
 
+<<<<<<< HEAD
     <%= content_tag :div, class: "share-box" do %>
         <p>Share The Do List</p>
         <a onclick="javascript:window.open('http:/twitter.com/share?text=<%= @post.title %> by @trillvenzini - &amp; url=<%= url_for([@post, {only_path: false}]) %>', '_blank', 'width=800', height=500, top=200, left=300');void(0);">
             <i class="fa fa-twitter"></i>
         </a>
     <% end %>
+=======
+<p>
+  <strong>Description:</strong>
+  <%= markdown @post.description %>
+</p>
+<% if user_signed_in? %>
+    <div id="admin_links">
+        <%= link_to "Edit Article", edit_post_path(@post) %>
+        <%= link_to 'Back', posts_path %>
+        <%= link_to "Delete Article", posts_path(@post), method: :delete, data: {confirm: "Are you sure?" } %>
+    </div>
+<% end %>
+<%#= link_to 'Edit', edit_post_path(@post) %> 
+<%#= link_to 'Back', posts_path %>
+<div class="share-box">
+    <p>Share The Do List</p>
+    <a onclick="javascript:window.open('http:/twitter.com/share?text=<%= @post.title %> by @trillvenzini - &amp; url=<%= url_for([@post, {only_path: false}]) %>', '_blank', 'width=800', height=500, top=200, left=300');void(0);">
+        <i class="fa fa-twitter"></i>
+    </a>
+</div>
+>>>>>>> styling_file
 
     <%= render 'disqus' %>
 <% end %>

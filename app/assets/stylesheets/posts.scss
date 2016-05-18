@@ -1,3 +1,15 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#post_show_content{
+    background-color: #0026ff;
+    padding: 100px 0 0;
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+    
+    header{
+        text-align: center;
+    }
+
+}
