@@ -3,13 +3,22 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #post_show_content{
     background-color: #0026ff;
-    padding: 100px 0 0;
+    padding: 100px 20px 20px;
     max-width: 640px;
-    margin: 0 auto;
+    margin:  0 auto;
     text-align: center;
-    
+
     header{
         text-align: center;
+        position: relative;
+        .date{
+            padding: 50px 0 0;
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+            padding: 50px 0 0;
+        }
     }
 
 }
