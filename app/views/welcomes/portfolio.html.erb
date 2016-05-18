@@ -47,7 +47,7 @@
     </div>
 <% end %>
 
-<div class="port-content">
+<div class="port-top-article">
     <%= content_tag :article do %>
         <%= content_tag :h1 do %>Section <% end %>
         <hr>
@@ -78,19 +78,21 @@
     <% end %>
 <% end %>
 
-<%= content_tag :article do %>
-    <%= content_tag :h1 do %>Section <% end %>
-        <hr>
-    <%= content_tag :p do %>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-        has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-        took a galley of type and scrambled it to make a type specimen book. It has survived not only
-        five centuries,<br>
-        but also the leap into electronic typesetting, remaining essentially unchanged.
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-        has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-        took a galley of type and scrambled it to make a type specimen book. It has survived not only
-        five centuries,<br>
-        but also the leap into electronic typesetting, remaining essentially unchanged.
+<%= content_tag :div, class: "port-bottom-article" do %>
+    <%= content_tag :article do %>
+        <%= content_tag :h1 do %>Section <% end %>
+            <hr>
+        <%= content_tag :p do %>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+            has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+            took a galley of type and scrambled it to make a type specimen book. It has survived not only
+            five centuries,<br>
+            but also the leap into electronic typesetting, remaining essentially unchanged.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+            has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+            took a galley of type and scrambled it to make a type specimen book. It has survived not only
+            five centuries,<br>
+            but also the leap into electronic typesetting, remaining essentially unchanged.
+        <% end %>
     <% end %>
 <% end %>
