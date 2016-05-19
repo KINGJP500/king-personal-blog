@@ -1,3 +1,51 @@
 // Place all the styles related to the works controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.works-carousel{
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 50px;
+    margin-bottom: auto;
+    padding-bottom: 19px;
+    #my-carousel{
+        height: 500px;
+        img{
+            width: 100%;
+            height: 500px;
+        }
+    }
+    .work-carousel-content{
+        height: 100px;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        margin-top: -193px;
+        text-align: center;
+        color: #ff6a00;
+    }
+}
+
+
+/** The top works article content**/
+.top-works-article{
+    article{
+        padding: 100px 0 0;
+        max-width: 640px;
+        margin: 0 auto;
+        text-align: center;
+        p{
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+        }
+    }
+}
+
+/** The work design of my development **/
+.works-design{
+    h1{
+        text-align: center;
+    }
+}

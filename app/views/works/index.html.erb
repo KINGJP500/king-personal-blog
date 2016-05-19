@@ -1,8 +1,90 @@
-<p id="notice"><%= notice %></p>
+<%= content_tag :div, class: "works-carousel" do %>
+    <div id="my-carousel" class="carousel slide" data-rise="carousel">
+        <%= content_tag :ol, class: "carousel-indicators" do %>
+            <li data-target="#my-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#my-carousel" data-slide-to="1"></li>
+            <li data-target="#my-carousel" data-slide-to="2"></li>
+        <% end %>
+        <%= content_tag :div, class: "carousel-inner" do %>
+            <%= content_tag :div, class: "item active" do %>
+                <%= image_tag("doctype-hi-res.jpg", alt: 'First slide', class: "img-responsive") %>
+                <%= content_tag :div, class: "carousel-caption" do %>
+                    <%= content_tag :h3 do %>Caption heading 1<% end %>
+                    <%= content_tag :p do %>Lorem ipsum dolor sit amet, consectetur adipiscing elit<% end %>
+                <% end %>
+            <% end %>
+            <%= content_tag :div, class: "item" do %>
+                <%= image_tag("doctype-hi-res.jpg", alt: 'Second slide', class: "img-responsive") %>
+                <%= content_tag :div, class: "carousel-caption" do %>
+                    <%= content_tag :h3 do %>Caption heading 2<% end %>
+                    <%= content_tag :p do %>Lorem ipsum dolor sit amet, consectetur adipiscing elit<% end %>
+                <% end %>
+            <% end %>
+            <%= content_tag :div, class: "item" do %>
+                <%= image_tag("doctype-hi-res.jpg", alt: 'Third slide', class: "img-respinsive") %>
+                <%= content_tag :div, class: "carousel-caption" do %>
+                    <%= content_tag :h3 do %>Caption heading 3<% end %>
+                    <%= content_tag :p do %>Lorem ipsum dolor sit amet, consectetur adipiscing elit<% end %>
+                <% end %>
+            <% end %>
+        <% end %>
+        <div class="left carousel-control" href="#my-carousel", data-slide="prev">
+            <%= content_tag :span, class: "glyphicon glyphicon-chevron-left" do %><% end %>
+        </div>
+        <div class="right carousel-control" href="#my-carousel", data-slide="next">
+            <%= content_tag :span, class: "glyphicon glyphicon-chevron-right" do %><% end %>
+        </div>
+        <%= content_tag :div, class: "work-carousel-content" do %>
+            <%= content_tag :h1 do %>Ruby on Rails<% end %>
+            <%= content_tag :p, class: "lead" do %>Rails is a web Framework<% end %>
+            <%= content_tag :p, class: "m-button" do %>
+                <%= link_to ('Learn more &raquo;'), {:href => 'http://asp.net'}, :class => "btn btn-primary btn-lg" %>
+                <%= link_to ('Learn more &raquo;'), {:href => 'http://asp.net'}, :class => "btn btn-primary btn-lg" %>
+            <% end %>
+        <% end %>
+    </div>
+<% end %>
 
-<h1>Listing Works</h1>
+<!-- -->
+<%= content_tag :div, class: "top-works-article" do %>
+    <%= content_tag :article do %>
+        <%= content_tag :h1 do %>Section <% end %>
+        <hr class="star-light">
+        <%= content_tag :p do %>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        <% end %>
+    <% end %>
+<% end %>
 
-<table>
+<!-- -->
+<%= content_tag :div, class: "works-design" do %>
+    <%= content_tag :div, class: "container" do %>
+        <%= content_tag :h1 do %>Listing Works<% end %>
+        <hr class="star-light">
+        <%= content_tag :div, class: "row" do %>
+
+        <% end %>
+    <% end %>
+<% end %>
+
+
+<!-- -->
+<%= content_tag :div, class: "top-works-article" do %>
+    <%= content_tag :article do %>
+        <%= content_tag :h1 do %>Section <% end %>
+        <hr class="star-light">
+        <%= content_tag :p do %>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        <% end %>
+    <% end %>
+<% end %>
+
+
+<!--table>
   <thead>
     <tr>
       <th>Title</th>
@@ -22,8 +104,8 @@
       </tr>
     <% end %>
   </tbody>
-</table>
+</table-->
 
 <br>
 
-<%= link_to 'New Work', new_work_path %>
+<%#= link_to 'New Work', new_work_path %>

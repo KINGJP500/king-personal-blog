@@ -1,6 +1,6 @@
-<h1>Listing Posts</h1>
-
 <%= content_tag :div, id: "posts_wrapper", class: "skinny_wrapper" do %>
+<h1>Listing Posts</h1>
+<hr class="star-light">
     <% @posts.each do |post| %>
         <%= content_tag :div, class: "post" do %>
             <p class="date"><%= post.created_at.strftime('%A, %b, %d') %></p>
