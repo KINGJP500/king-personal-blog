@@ -4,7 +4,7 @@ module ApplicationHelper
             Pygments.highlight(code, lexer: language)
         end
     end
-    def markdown(content)
+    def markdown(description)
         render = HTMLwithPygments.new(hard_wrap: true, filter_html: true)
         options = {
             autolink: true,
@@ -15,6 +15,6 @@ module ApplicationHelper
             strikethrough: true,
             superscript: true
         }
-        Redcarpet::Markdown.new(render, options).render(content).html_safe
+        Redcarpet::Markdown.new(render, options).render(description).html_safe
     end
 end
