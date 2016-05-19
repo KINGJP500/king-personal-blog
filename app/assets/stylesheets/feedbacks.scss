@@ -2,25 +2,70 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+/** The contact page styling carousel **/
+.contact-carousel{
+    padding: 0;
+    padding-right: 0;
+    margin-top: 50px;
+    margin-bottom: auto;
+    padding-bottom: 19px;
+    #my-carousel{
+        height: 500px;
+        img{
+            width: 100%;
+            height: 500px;
+        }
+    }
+    .contact-carousel-content{
+        height: 100px;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        margin-top: -193px;
+        text-align: center;
+        color: #ff6a00;
+    }
+    h1{
+        font-family: 'Orbitron', sans-serif;
+        font-weight: 20em;
+        font-size: 5em;
+    }
+    .carousel-caption{
+        color: blue;
+    }
+}
 
 
 /* the choosing contact section of the contact page */
 .choosing-contact{
-    padding: 20px auto;
+    padding: 20px  0;
     h2{
         text-align: center;
     }
-    p{
-        text-align: center;
-    }
-    h1{
-        text-align: center;
+    .contact-project{
+        padding: 3em 0 .51em 0;
+        p{
+            padding: .5em;
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+        }
+        .ui-ux-design{
+            text-align: center;
+        }
+        .ios-android{
+            text-align: center;
+        }
+        .quality-assurance{
+            text-align: center;
+        }
     }
 }
 
 /* the contacts form below of the contacts page */
 .contacts-form.below{
-    padding: 25px auto;
+    padding-top: 70px;
     h2{
         text-align: center;
     }
@@ -31,6 +76,7 @@
             }
             #inputName.form-control{
                 text-align: center;
+                /** input[type="text"]{width: 100%;}**/
             }
             #inputEmail.form-control{
                 text-align: center;

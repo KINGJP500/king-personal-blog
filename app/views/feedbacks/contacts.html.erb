@@ -34,7 +34,7 @@
         <div class="right carousel-control" href="#my-carousel" data-slide="next">
             <%= content_tag :span, class: "glyphicon glyphicon-chevron-right" do %><% end %>
         </div>
-        <%= content_tag :div, class: "carousel-content" do %>
+        <%= content_tag :div, class: "contact-carousel-content" do %>
             <%= content_tag :h1 do %>Ruby on Rails<% end %>
             <%= content_tag :p, class: "lead" do %>Rails is web framework for applicatioon<% end %>
             <%= content_tag :p, class: "m-button" do %>
@@ -48,30 +48,42 @@
 <div class="choosing-contact">
     <%= content_tag :div, class: "container" do %>
         <%= content_tag :h2 do %>Why Choosing me<% end %>
-        <%= content_tag :div, class: "row" do %>
-            <%= content_tag :div, class: "col-xs-12 col-sm-6 col-md-4" do %>
-                <%= content_tag :h1 do %>UI UX DESIGN<% end %>
-                <%= content_tag :p do %>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<% end %>
-            <% end %>
-            <%= content_tag :div, class: "col-xs-12 col-sm-6 col-md-4" do%>
-                <%= content_tag :h1 do %>IOS & Android<% end %>
-                <%= content_tag :p do %>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<% end %>
-            <% end %>
-            <%= content_tag :div, class: "col-xs-12 col-sm-6 col-md-4" do %>
-                <%= content_tag :h1 do %>Quality Assurance<% end %>
-                <%= content_tag :p do %>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<% end %>
+        <hr class="star-light">
+        <%= content_tag :div, class: "contact-project" do %>
+            <%= content_tag :div, class: "row" do %>
+                <%= content_tag :div, class: "col-xs-12 col-sm-4 col-md-4" do %>
+                    <%= content_tag :div, class: "ui-ux-design" do %>
+                        <%= fa_icon "desktop", class: "fa-3x" %>
+                        <%= content_tag :h1 do %>UI UX DESIGN<% end %>
+                        <hr class="star-light">
+                            <%= content_tag :p do %>
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            <% end %>
+                    <% end %>
+                <% end %>
+                <%= content_tag :div, class: "col-xs-12 col-sm-4 col-md-4" do%>
+                    <%= content_tag :div, class: "ios-android" do %>
+                        <%= fa_icon "desktop", class: "fa-3x" %>
+                        <%= content_tag :h1 do %>IOS & Android<% end %>
+                        <hr class="star-light">
+                            <%= content_tag :p do %>
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            <% end %>
+                    <% end %>
+                <% end %>
+                <%= content_tag :div, class: "col-xs-12 col-sm-4 col-md-4" do %>
+                    <%= content_tag :div, class: "quality-assurance" do %>
+                        <%= fa_icon "desktop", class: "fa-3x" %>
+                        <%= content_tag :h1 do %>Quality Assurance<% end %>
+                        <hr class="star-light">
+                            <%= content_tag :p do %>
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            <% end %>
+                    <% end %>
+                <% end %>
             <% end %>
         <% end %>
     <% end %>
@@ -81,6 +93,7 @@
 <div class="contacts-form below">
     <%= content_tag :div, class: "container" do %>
         <%= content_tag :h2 do %>CONTACT US AND GET A FREE QUOTE<% end %>
+        <hr class="star-light">
         <%= content_tag :div, class: "row" do %>
             <%= content_tag :div, class: "col-xs-12 col-sm-12 col-md-10 col-md-offset-1" do %>
                 <%= render 'feedbacks/form' %>

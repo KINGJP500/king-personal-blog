@@ -84,6 +84,7 @@ hr.star-light{
        }
    }
    p{
+       padding: .5em;
        text-align: center;
    }
    .photography{
@@ -92,11 +93,19 @@ hr.star-light{
            color: #00ff90;
        }
    }
+   p{
+       padding: .5em;
+       text-align: center;
+   }
    .web-application{
        text-align: center;
        :hover i.fa.fa-code{
            color: #ff006e;
        }
+   }
+   p{
+       padding: .5em;
+       text-align: center;
    }
 }
 

@@ -19,7 +19,7 @@ class FeedbacksController < ApplicationController
                 #flash.now[:error] = nil
                 format.html { redirect_to contacts_path, notice: 'User was successfully created.'}
             else
-                format.html {render json: user.errors, status: :unprocessable_entity}
+                format.html {render json: @feedback.errors, status: :unprocessable_entity}
                 #flash.now[:error] = 'Cannot send message.'
                 #render :new
             end

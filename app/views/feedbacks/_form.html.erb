@@ -1,25 +1,24 @@
 <%= form_for :feedback, url: feedbacks_path, html: {class: "form-horizontal",  role: "form"} do | f | %>
-<%#= form_for :new_feedback do | f | %>
-    <%# if :new_feedback.errors.any? %>
-        <div class="row">
+    <%# if :feedback.errors.any? %>
+        <!--div class="row">
             <div class="col-md-12">
                 <div id="errors_explanation">
                     <h2>
-                        <%#= pluralize(@new_feedback.errors.count, "error") %>prohibited this article from being saved:
+                        <%#= pluralize(@feedback.errors.count, "error") %>prohibited this article from being saved:
                     </h2>
                     <ul>
-                        <%#= @new_feedback.errors.full_messages.each do |msg| %>
+                        <%# @feedback.errors.full_messages.each do |msg| %>
                             <li><%#= msg %></li>
                         <%# end %>
                     </ul>
                 </div>
             </div>
-        </div>
+        </div-->
     <%# end %>
     <fieldset>
         <legend>Legend</legend>
         <div class="form-group" id="form-name">
-            <%= f.label :name, :class => "col-lg-2 control-label", :id => "name" %>
+            <%= f.label :name, :class => "col-lg-2 control-label", :id => "name" %><br>
             <div class="col-md-4 col-md-offset-2">
                 <%= f.text_field :name, required: true, :placeholder => "Name", :id => "inputName", :class => "form-control" %>
             </div>
@@ -37,11 +36,6 @@
                 <%#= f.telephone_field( :phone) %>
                 <%#= select_date Date.today, prefix: :start_date %>
                 <%#= select_year(Time.now) %>
-                <div>
-                    <label>
-                        <input type="checkbox"> Checkbox
-                    </label>
-                </div>
             </div>
         </div>
         <div class="form-group" id="form-company">
