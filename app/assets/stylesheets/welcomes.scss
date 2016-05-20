@@ -119,6 +119,7 @@ hr.star-light{
         margin: 0 auto;
         text-align: center;
         p{
+            padding: .5em;
            text-align: center;
        }
        h1{
@@ -236,6 +237,10 @@ hr.star-light{
        text-align: center;
        position: relative;
        background-color: green;
+       p{
+           text-align: center;
+           padding: .5em;
+       }
    }
 }
 
