@@ -42,7 +42,7 @@
             <% end %>
         <% end %>
     </div>
-<% end %>
+<% end %><!-- end of the carousel page
 
 <!-- the service-icon section of the home page -->
 <%= content_tag :div, class: "service-icon" do %>
@@ -86,7 +86,7 @@
             <% end %>
         <% end %>
     <% end %>
-<% end %>
+<% end %><!-- end of the service icon section -->
 
 <!-- this is the phone emulator top article and carousel -->
 <%= content_tag :div, class: "top-article" do %>
@@ -102,7 +102,7 @@
             <%= link_to image_tag("iPhone.png", alt: "the phone emulator", class: "img-responsive") %>
         <% end %>
     <% end %>
-<% end %>
+<% end %><!-- end of the top article page -->
 
 <!-- this is the work section of the home work pic section showing the landing pages-->
 <%= content_tag :div, class: "home-work-pic" do %>
@@ -155,7 +155,7 @@
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                     when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                 <% end %>
-        <% end %>
+        <% end %><!-- end of the work section pages -->
 
         <!-- the other section of the home pic work-->
         <%= content_tag :div, class: "row" do %>
@@ -195,7 +195,7 @@
             <% end %>
         <% end %>
     <% end %>
-<% end %>
+<% end %><!-- end of the other figcaption page -->
 
 <!-- the bottom article of the page with the desk emulator -->
 <%= content_tag :div, class: "bottom-article" do %>
@@ -213,7 +213,9 @@
 
         <% end %>
     <% end %>
-<% end %>
+<% end %><!-- end of the bottom page article -->
+
+
 <!-- the bottom region sec of the home page -->
 <%= content_tag :div, class: "bottom-region" do %>
     <%= content_tag :div, class: "container" do  %>
@@ -227,7 +229,7 @@
                     enables a clean separation of concerns and gives you full control over markup
                     for enjoyable, agile development.
                 <% end %>
-                <%= content_tag :p do %><%= link_to(:li, "http://google.com", :class => 'btn-project btn-outline', :id => "my-project") %><% end %>
+                <%= content_tag :p do %><%= link_to ('learn more & raquo;'), {:li => "http://google.com"}, :class => 'btn btn-primary btn-project btn-outline', :id => "my-project" %><% end %>
             <% end %>
             <%= content_tag :div, class: "col-xs-12 col-sm-4 col-md-4" do %>
                 <%= image_tag("photo-of-the-sunset.jpeg", alt: "", class: "img-responsive") %>
@@ -238,7 +240,7 @@
                     enables a clean separation of concerns and gives you full control over markup
                     for enjoyable, agile development.
                 <% end %>
-                <%= content_tag :p do %><%= link_to(:li, "http://google.com", :class => 'btn-project btn-outline', :id => "my-project") %><% end %>
+                <%= content_tag :p do %><%= link_to ('learn more & raquo;'), {:li => "http://google.com"}, :class => 'btn btn-primary btn-project btn-outline', :id => "my-project" %><% end %>
             <% end %>
             <%= content_tag :div, class: "col-xs-12 col-sm-4 col-md-4" do %>
                 <%= image_tag("sky-over-view.png", alt: "", class: "img-responsive") %>
@@ -249,7 +251,7 @@
                     enables a clean separation of concerns and gives you full control over markup
                     for enjoyable, agile development.
                 <% end %>
-                <%= content_tag :p do %><%= link_to(:li, "http://google.com", :class => 'btn-project btn-outline', :id => "my-project") %><% end %>
+                <%= content_tag :p do %><%= link_to ('learn more & raquo;'), {:li => "http://google.com"}, :class => 'btn btn-primary btn-project btn-outline', :id => "my-project" %><% end %>
             <% end %>
         <% end %>
     <% end %>

@@ -1,3 +1,12 @@
+<%= content_tag :div, class: "the_post_show_banner" do %>
+    <div class="banner">
+        <%= image_tag("Silhoutte.jpg") %>
+    </div>
+    <%= content_tag :div, class: "post_content" do %>
+
+    <% end %>
+<% end %><!-- end of the post banner page -->
+
 <%= content_tag :div, id: "post_show_content", class: "skinny_wrapper wrapper_padding" do %>
     <header>
         <p class="date"><%= @post.created_at.strftime('%A, %B, %d') %></p>

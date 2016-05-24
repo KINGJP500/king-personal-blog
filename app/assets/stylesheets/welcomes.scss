@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 hr.star-light{
-    color: #18bc9c;
+    color: #1abc9c; /*18bc9c*/
 }
 hr.star-light{
     padding: 0;
@@ -112,7 +112,7 @@ hr.star-light{
 
 /* The top article of the page content */
 .top-article{
-    background-color: #0026ff;
+    /*background-color: #0026ff;*/
     article{
         padding: 100px 0 0;
         max-width: 640px;
@@ -150,7 +150,7 @@ hr.star-light{
 .home-work-pic{
     padding: 240px 0 150px 0;
     margin-bottom: 100px;
-    background-color: #00ff90;
+    /*background-color: #00ff90;*/
     h1{
         text-align: center;
     }
@@ -236,7 +236,7 @@ hr.star-light{
        margin: 0 auto;
        text-align: center;
        position: relative;
-       background-color: green;
+       /*background-color: green;*/
        p{
            text-align: center;
            padding: .5em;
@@ -257,7 +257,7 @@ hr.star-light{
 .bottom-region{
     padding: 240px 0 150px 0;
     text-align: center;
-    background-color: deepskyblue;
+    /*background-color: deepskyblue;*/
     p{
        text-align: center;
    }

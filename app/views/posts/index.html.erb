@@ -1,3 +1,13 @@
+<%= content_tag :div, class: "the_post_banner" do %>
+    <div class="banner" >
+        <%= image_tag("Silhoutte.jpg") %>
+    </div>
+    <%= content_tag :div, class: "post_content" do %>
+        <%= content_tag :h1 do %>Ruby on Rails <% end %>
+            <%= content_tag :h3 do %>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<% end %>
+    <% end %>
+<% end %><!-- end of the post banner page -->
+
 <%= content_tag :div, id: "posts_wrapper", class: "skinny_wrapper" do %>
 <h1>Listing Posts</h1>
 <hr class="star-light">
@@ -7,7 +17,7 @@
             <h2><a href="#"><%= link_to post.title, post %></a></h2>
         <% end %>
     <% end %>
-<% end %>
+<% end %><!-- end of the listing posts -->
 
 <!--table>
   <thead>
