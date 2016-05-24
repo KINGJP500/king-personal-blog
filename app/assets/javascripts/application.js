@@ -20,3 +20,6 @@
 //= require home
 //= require work
 //= require portfolio
+//= require feedbacks
+//= require works
+//= require posts
