@@ -1,4 +1,4 @@
-<%= content_tag :div, class: "home-carousel" do %>
+<%= content_tag :div, class: "home_carousel" do %>
     <div  id="my-carousel" class="carousel slide" data-ride="carousel">
         <%= content_tag :ol, class: "carousel-indicators" do %>
             <li data-target="#my-carousel" data-slide-to="0" class="active"></li>
@@ -34,7 +34,7 @@
         <div class="right carousel-control" href="#my-carousel" data-slide="next">
             <%= content_tag :span, class: "glyphicon glyphicon-chevron-right" do %><% end %>
         </div>
-        <%= content_tag :div, class: "home-carousel-content" do %>
+        <%= content_tag :div, class: "home_carousel_content" do %>
             <%= content_tag :h1 do %>Ruby on Rails<% end %>
             <%= content_tag :p, class: "lead" do %>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br>Rails is a web framework for application<% end %>
             <%= content_tag :ul, class: "list-inline-outline" do %>
@@ -42,14 +42,14 @@
             <% end %>
         <% end %>
     </div>
-<% end %><!-- end of the carousel page
+<% end %><!-- end of the carousel page -->
 
 <!-- the service-icon section of the home page -->
-<%= content_tag :div, class: "service-icon" do %>
+<%= content_tag :div, class: "service_icon" do %>
     <%= content_tag :div, class: "container" do %>
         <%= content_tag :div, class: "row" do %>
             <%= content_tag :div, class: "col-xs-12 col-sm-4 col-md-4" do %>
-                <%= content_tag :div, class: "web-develop" do %>
+                <%= content_tag :div, class: "web_develop" do %>
                     <%= fa_stacked_icon "desktop", base: "square-o", class: "fa-3x" %>
                     <%= content_tag :h1 do %>Section<% end %>
                     <%= content_tag :hr, class: "star-light" do %><% end %>
@@ -71,7 +71,7 @@
                 <% end %>
             <% end %>
             <%= content_tag :div, class: "col-xs-12 col-sm-4 col-md-4" do %>
-                <%= content_tag :div, class:  "web-application" do %>
+                <%= content_tag :div, class:  "web_application" do %>
                     <%= fa_stacked_icon "code", base: "square-o", class: "fa-3x" %>
                     <%= content_tag :h1 do %>Section<% end %>
                     <%= content_tag :hr, class: "star-light" do %><% end %>
@@ -89,7 +89,7 @@
 <% end %><!-- end of the service icon section -->
 
 <!-- this is the phone emulator top article and carousel -->
-<%= content_tag :div, class: "top-article" do %>
+<%= content_tag :div, class: "top_article" do %>
     <%= content_tag :article do %>
         <%= content_tag :h1 do %>Section<% end %>
         <%= content_tag :hr, class: "star-light" do %><% end %>
@@ -98,14 +98,14 @@
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
         <% end %>
-        <%= content_tag :div, class: "phone-emulator" do %>
+        <%= content_tag :div, class: "phone_emulator" do %>
             <%= link_to image_tag("iPhone.png", alt: "the phone emulator", class: "img-responsive") %>
         <% end %>
     <% end %>
 <% end %><!-- end of the top article page -->
 
 <!-- this is the work section of the home work pic section showing the landing pages-->
-<%= content_tag :div, class: "home-work-pic" do %>
+<%= content_tag :div, class: "home_work_pic" do %>
     <%= content_tag :div, class: "container" do %>
         <%= content_tag :h1 do %>Section<% end %>
         <%=  content_tag :hr, class: "star-light" do %><% end %>
@@ -147,16 +147,23 @@
                 <% end %>
             <% end %>
         <% end %>
-        <%= content_tag :article do %>
-            <%= content_tag :h1 do %>Section<% end %>
-            <%= content_tag :hr, class: "star-light" do %><% end %>
-                <%= content_tag :p do %>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                <% end %>
-        <% end %><!-- end of the work section pages -->
+    <% end %>
+<% end %><!-- end of the other figcaption page -->
 
+<%= content_tag :div , class: "works_top_article" do  %>
+    <%= content_tag :article do %>
+        <%= content_tag :h1 do %>Section<% end %>
+        <%= content_tag :hr, class: "star-light" do %><% end %>
+            <%= content_tag :p do %>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            <% end %>
+    <% end %><!-- end of the work section pages -->
+<% end %>
+
+<%= content_tag :div, class: "b_home_work_pic" do %>
+    <%= content_tag :div, class: "container" do %>
         <!-- the other section of the home pic work-->
         <%= content_tag :div, class: "row" do %>
             <%= content_tag :h1 do %>Section <% end %>
@@ -195,10 +202,11 @@
             <% end %>
         <% end %>
     <% end %>
-<% end %><!-- end of the other figcaption page -->
+<% end %>
+
 
 <!-- the bottom article of the page with the desk emulator -->
-<%= content_tag :div, class: "bottom-article" do %>
+<%= content_tag :div, class: "bottom_article" do %>
     <%= content_tag :article do %>
         <%= content_tag :h1 do %>Section<% end %>
         <%= content_tag :hr, class: "star-light" do %><% end %>
@@ -217,39 +225,42 @@
 
 
 <!-- the bottom region sec of the home page -->
-<%= content_tag :div, class: "bottom-region" do %>
+<%= content_tag :div, class: "bottom_region" do %>
     <%= content_tag :div, class: "container" do  %>
         <%= content_tag :div, class: "row" do %>
-            <%= content_tag :div, class: "col-xs-12 col-sm-4 col-md-4" do %>
+            <%= content_tag :div, class: "col-xs-6 col-sm-3 col-md-3" do %>
                 <%= image_tag("Silhoutte.jpg", alt: "", class: "img-responsive") %>
-                <%= content_tag :h2 do %>Getting started<% end %>
+                <%= content_tag :h2 do %>Plan<% end %>
                 <%= content_tag :hr, class: "star-light" do %><% end %>
                 <%= content_tag :p do %>
-                    Ruby MVC gives you a powerful, patterns-based way to build dynamic websites that
-                    enables a clean separation of concerns and gives you full control over markup
-                    for enjoyable, agile development.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                 <% end %>
                 <%= content_tag :p do %><%= link_to ('learn more & raquo;'), {:li => "http://google.com"}, :class => 'btn btn-primary btn-project btn-outline', :id => "my-project" %><% end %>
             <% end %>
-            <%= content_tag :div, class: "col-xs-12 col-sm-4 col-md-4" do %>
+            <%= content_tag :div, class: "col-xs-6 col-sm-3 col-md-3" do %>
+                <%= image_tag("Silhoutte.jpg", alt: "", class: "img-responsive") %>
+                <%= content_tag :h2 do %>Design<% end %>
+                <%= content_tag :hr, class: "star-light" do %><% end %>
+                <%= content_tag :p do %>
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                <% end %>
+                <%= content_tag :p do %><%= link_to ('learn more & raquo;'), {:li => "http://google.com"}, :class => 'btn btn-primary btn-project btn-outline', :id => "my-project" %><% end %>
+            <% end %>
+            <%= content_tag :div, class: "col-xs-6 col-sm-3 col-md-3" do %>
                 <%= image_tag("photo-of-the-sunset.jpeg", alt: "", class: "img-responsive") %>
-                <%= content_tag :h2 do %>Getting more libraries<% end %>
+                <%= content_tag :h2 do %>Develop<% end %>
                 <%= content_tag :hr, class: "star-light" do %><% end %>
                 <%= content_tag :p do %>
-                    Ruby MVC gives you a powerful, patterns-based way to build dynamic websites that
-                    enables a clean separation of concerns and gives you full control over markup
-                    for enjoyable, agile development.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                 <% end %>
                 <%= content_tag :p do %><%= link_to ('learn more & raquo;'), {:li => "http://google.com"}, :class => 'btn btn-primary btn-project btn-outline', :id => "my-project" %><% end %>
             <% end %>
-            <%= content_tag :div, class: "col-xs-12 col-sm-4 col-md-4" do %>
+            <%= content_tag :div, class: "col-xs-6 col-sm-3 col-md-3" do %>
                 <%= image_tag("sky-over-view.png", alt: "", class: "img-responsive") %>
-                <%= content_tag :h2 do %>Web Hosting<% end %>
+                <%= content_tag :h2 do %>Launch<% end %>
                 <%= content_tag :hr, class: "star-light" do %><% end %>
                 <%= content_tag :p do %>
-                    ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-                    enables a clean separation of concerns and gives you full control over markup
-                    for enjoyable, agile development.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                 <% end %>
                 <%= content_tag :p do %><%= link_to ('learn more & raquo;'), {:li => "http://google.com"}, :class => 'btn btn-primary btn-project btn-outline', :id => "my-project" %><% end %>
             <% end %>

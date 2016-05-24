@@ -14,12 +14,12 @@ hr.star-light{
 }
 
 /* the home carousel of the page */
-.home-carousel {
+.home_carousel {
     padding-left: 0;
     padding-right: 0;
     margin-top: 50px;
     margin-bottom: auto;
-    padding-bottom: 19px;
+    /*padding-bottom: 19px;*/
     #my-carousel{
        height: 500px;
        img{
@@ -27,7 +27,7 @@ hr.star-light{
           height: 500px;
       }
    }
-   .home-carousel-content {
+   .home_carousel_content {
        height: 100px;
        width: 100%;
        position: absolute;
@@ -72,12 +72,12 @@ hr.star-light{
 }
 
 /*This the service-icon content of the web development */
-.service-icon{
-    padding: 50px 0;
+.service_icon{
+    padding: 5em 0  0;
     h1{
        text-align: center;
    }
-   .web-develop{
+   .web_develop{
        text-align: center;
        :hover i.fa.fa-desktop{
            color: #ff0000;
@@ -97,7 +97,7 @@ hr.star-light{
        padding: .5em;
        text-align: center;
    }
-   .web-application{
+   .web_application{
        text-align: center;
        :hover i.fa.fa-code{
            color: #ff006e;
@@ -111,10 +111,11 @@ hr.star-light{
 
 
 /* The top article of the page content */
-.top-article{
+.top_article{
+    padding: 5em 0 0;
     /*background-color: #0026ff;*/
     article{
-        padding: 100px 0 0;
+        /*padding: 100px 0 0;*/
         max-width: 640px;
         margin: 0 auto;
         text-align: center;
@@ -143,12 +144,12 @@ hr.star-light{
            text-align: center;
        }
     }
-}/*
+}
 
 
 /*This is the first home work picture of my design*/
-.home-work-pic{
-    padding: 240px 0 150px 0;
+.home_work_pic{
+    padding: 5em 0 0;
     margin-bottom: 100px;
     /*background-color: #00ff90;*/
     h1{
@@ -218,20 +219,107 @@ hr.star-light{
     text-align: center;
     padding: 2px 8px;
     }
+
+}
+
+/* the works top artcle */
+.works_top_article{
     article{
        padding: 20px 0 0;
        max-width: 640px;
        margin: 0 auto;
        text-align: center;
+      p{
+           padding: .5em;
+          text-align: center;
+      }
+      h1{
+           text-align: center;
+       }
    }
 }
 
+/* the other section of the works flow */
+.b_home_work_pic{
+    padding: 5em 0 0;
+    margin-bottom: 100px;
+    /*background-color: #00ff90;*/
+    h1{
+        text-align: center;
+    }
+    /*The picture is being parallex*/
+    figure{
+        margin-bottom: 20px;
+        padding: 0 10px;
+        position: relative;
+        opacity: 0;
+        -moz-transform: translateX(30px);
+        -ms-transform: translateX(30px);
+        -o-transform: translateX(30px);
+        -webkit-transform: translateX(30px);
+        transform: translateX(30px);
+        -moz-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        -webkit-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+        overflow: hidden;
+        cursor: pointer;
+
+        &.is-showing{
+            opacity: 1;
+            -moz-transform: translateX(0px);
+            -ms-trasform: translateX(0px);
+            -o-transform: translateX(0px);
+            -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+        }
+        img{
+            display: block;
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            -o-transform: scale(1);
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+        &:hover
+            figcaption{
+                left: 0%;
+              img{
+                -moz-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                -o-transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+                }
+            }
+    }
+    figcaption{
+    position: absolute;
+    bottom: 10px;
+    left: -850%;
+    background: black;
+    color: white;
+    font-size: 10px;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    padding: 2px 8px;
+    }
+
+}
+
 /* The bottom homepage article of the page */
-.bottom-article{
+.bottom_article{
     position: relative;
-    padding: 100px 0;
+    /*padding: 100px 0;*/
     article{
-       padding: 100px 0;
+       /*padding: 100px 0;*/
        max-width: 640px;
        margin: 0 auto;
        text-align: center;
@@ -245,7 +333,7 @@ hr.star-light{
 }
 
 /*The pc-carousel sliding from left to right */
-.desk-carousel-emulator{
+.desk_carousel_emulator{
     height: 100%;
     width: 100%;
     background-image: url();
@@ -254,8 +342,8 @@ hr.star-light{
     position: absolute;
 }
 
-.bottom-region{
-    padding: 240px 0 150px 0;
+.bottom_region{
+    padding: 60px 0 100px 0;
     text-align: center;
     /*background-color: deepskyblue;*/
     p{
