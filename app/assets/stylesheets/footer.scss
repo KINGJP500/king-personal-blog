@@ -29,8 +29,9 @@ footer {
        font-family: 'Open Sans Condensed', sans-serif;
    }
    .footer-below{
-       background: linear-gradient(to top, #E47D7D 0%, #C195D3 50%, #4FB4E8 100%);
-        background: -webkit-linear-gradient(to top, #E47D7D 0%, #C195D3 50%, #4FB4E8 100%);
+       background-color: #021426;
+       /*background: linear-gradient(to top, #E47D7D 0%, #C195D3 50%, #4FB4E8 100%);*/
+        /*background: -webkit-linear-gradient(to top, #E47D7D 0%, #C195D3 50%, #4FB4E8 100%);*/
    }
 }
 
@@ -65,3 +66,13 @@ a, a:hover, a:focus, a:active, a.active {
 .input-group-btn{
     background-color: #1abc9c;
 }
+
+
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  color: #FFF;
+  background-color: #33C3F0;
+  border-color: #33C3F0; }

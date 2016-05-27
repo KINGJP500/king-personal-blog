@@ -70,13 +70,18 @@
     <% end %>
 </div>
 
-<%= content_tag :div, class: "larges-window" do %>
-    <%= content_tag :div, class: "window-tint" do %>
-        <%= content_tag :div, class: "promo-text" do %>
-            Fall Suits<strong><span>from</span>$99</strong><a href="" class="window-cta">Shop Now</a>
+<%= content_tag :div, class: "window_article" do %>
+    <%= content_tag :article do %>
+        <%= content_tag :div, class: "larges-window" do %>
+            <%= content_tag :div, class: "window-tint" do %>
+                <%= content_tag :div, class: "promo-text" do %>
+                    <!--Fall Suits<strong><span>from</span>$99</strong><a href="" class="window-cta">Shop Now</a>-->
+                <% end %>
+            <% end %>
         <% end %>
     <% end %>
-<% end %>
+<% end %><!-- end of the window article -->
+
 
 <%= content_tag :div, class: "port-bottom-article" do %>
     <%= content_tag :article do %>

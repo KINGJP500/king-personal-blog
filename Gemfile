@@ -13,6 +13,9 @@ end
 group :development do
     gem 'mysql2', '~>0.3.12'
 end
+
+gem 'paperclip', '~> 4.3', '>= 4.3.6'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets

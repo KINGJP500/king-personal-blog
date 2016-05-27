@@ -65,6 +65,66 @@ hr.star-light{
     }
 }
 
+/* The window tinted glass for porfolio*/
+.window_article{
+    article{
+        padding: 100px 0;
+        max-width: 640px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+.larges-window {
+  height: 640px;
+  /*padding: 0 50px;*/
+  /*width: 640px;*/
+  background-image: url(model2.jpg);
+  background-position: center 0px;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  margin-top: 100px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 100px;
+  border-radius: 50%;
+  position: relative; }
+  .larges-window .window-tint {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1; }
+  .larges-window .promo-text {
+    color: white;
+    font-weight: 100;
+    font-size: 50px;
+    line-height: 1.2; }
+    .large-window .promo-text strong {
+      display: block;
+      font-size: 30px; }
+    .larges-window .promo-text span {
+      font-weight: 300;
+      font-size: 18px;
+      font-style: italic;
+      color: rgba(255, 255, 255, 0.6); }
+    .larges-window .promo-text .window-cta {
+      font-size: 20px;
+      text-decoration: none;
+      color: white;
+      border: 1px solid white;
+      padding: 10px 20px;
+      transition: all 0.3s ease-in-out; }
+      .larges-window .promo-text .window-cta:hover {
+        background: white;
+        color: black; }
+
+
 /* the bottom article of the portolio page*/
 .port-bottom-article{
     background-color: green;
