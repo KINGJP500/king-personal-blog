@@ -8,7 +8,7 @@ window.onload = function any_function_name(){
     newHeading.innerHTML = "Ruby on Rails";
     newParagrapth.innerHTML = "Rails is a web framework for application";
 }
-$(window).scroll(fucntion(){
+$(window).scroll(function(){
     var pScroll = $(this).scrollTop();
 
     // Promoscope
