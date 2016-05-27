@@ -21,4 +21,4 @@ $(window).scroll(fucntion(){
       $('.window-tint').css({'opacity': opacity});
 
     }
-})
+});
