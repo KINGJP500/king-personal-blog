@@ -228,42 +228,50 @@
 <%= content_tag :div, class: "bottom_region" do %>
     <%= content_tag :div, class: "container" do  %>
         <%= content_tag :div, class: "row" do %>
+            <div class="plan">
             <%= content_tag :div, class: "col-xs-6 col-sm-3 col-md-3" do %>
-                <%= image_tag("Silhoutte.jpg", alt: "", class: "img-responsive") %>
+                <%= fa_stacked_icon "clock-o", base: "circle-thin", class: "fa-3x" %>
                 <%= content_tag :h2 do %>Plan<% end %>
                 <%= content_tag :hr, class: "star-light" do %><% end %>
                 <%= content_tag :p do %>
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                 <% end %>
-                <%= content_tag :p do %><%= link_to ('learn more & raquo;'), {:li => "http://google.com"}, :class => 'btn btn-primary btn-project btn-outline', :id => "my-project" %><% end %>
+                <%= content_tag :p, class: "plan_wrapper" do %><%= link_to ('learn more'), {:li => "http://google.com"}, :class => 'button button_outline', :id => "my_plan" %><% end %>
             <% end %>
-            <%= content_tag :div, class: "col-xs-6 col-sm-3 col-md-3" do %>
-                <%= image_tag("Silhoutte.jpg", alt: "", class: "img-responsive") %>
-                <%= content_tag :h2 do %>Design<% end %>
-                <%= content_tag :hr, class: "star-light" do %><% end %>
-                <%= content_tag :p do %>
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </div>
+            <div class="design">
+                <%= content_tag :div, class: "col-xs-6 col-sm-3 col-md-3" do %>
+                    <%= fa_stacked_icon "laptop", base: "circle-thin", class: "fa-3x" %>
+                    <%= content_tag :h2 do %>Design<% end %>
+                    <%= content_tag :hr, class: "star-light" do %><% end %>
+                    <%= content_tag :p do %>
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    <% end %>
+                    <%= content_tag :p, class: "design_wrapper" do %><%= link_to ('learn more'), {:li => "http://google.com"}, :class => 'button button_outline', :id => "my_design" %><% end %>
                 <% end %>
-                <%= content_tag :p do %><%= link_to ('learn more & raquo;'), {:li => "http://google.com"}, :class => 'btn btn-primary btn-project btn-outline', :id => "my-project" %><% end %>
-            <% end %>
-            <%= content_tag :div, class: "col-xs-6 col-sm-3 col-md-3" do %>
-                <%= image_tag("photo-of-the-sunset.jpeg", alt: "", class: "img-responsive") %>
-                <%= content_tag :h2 do %>Develop<% end %>
-                <%= content_tag :hr, class: "star-light" do %><% end %>
-                <%= content_tag :p do %>
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </div>
+            <div class="develop">
+                <%= content_tag :div, class: "col-xs-6 col-sm-3 col-md-3" do %>
+                    <%= fa_stacked_icon "cog", base: "circle-thin", class: "fa-3x" %>
+                    <%= content_tag :h2 do %>Develop<% end %>
+                    <%= content_tag :hr, class: "star-light" do %><% end %>
+                    <%= content_tag :p do %>
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    <% end %>
+                    <%= content_tag :p, class: "develop_wrapper" do %><%= link_to ('learn more'), {:li => "http://google.com"}, :class => 'button button_outline', :id => "my_develop" %><% end %>
                 <% end %>
-                <%= content_tag :p do %><%= link_to ('learn more & raquo;'), {:li => "http://google.com"}, :class => 'btn btn-primary btn-project btn-outline', :id => "my-project" %><% end %>
-            <% end %>
-            <%= content_tag :div, class: "col-xs-6 col-sm-3 col-md-3" do %>
-                <%= image_tag("sky-over-view.png", alt: "", class: "img-responsive") %>
-                <%= content_tag :h2 do %>Launch<% end %>
-                <%= content_tag :hr, class: "star-light" do %><% end %>
-                <%= content_tag :p do %>
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </div>
+            <div class="launch">
+                <%= content_tag :div, class: "col-xs-6 col-sm-3 col-md-3" do %>
+                    <%= fa_stacked_icon "cube",  base: "circle-thin", class: "fa-3x" %>
+                    <%= content_tag :h2 do %>Launch<% end %>
+                    <%= content_tag :hr, class: "star-light" do %><% end %>
+                    <%= content_tag :p do %>
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    <% end %>
+                    <%= content_tag :p, class: "launch_wrapper" do %><%= link_to ('learn more'), {:li => "http://google.com"}, :class => 'button button_outline', :id => "my_launch" %><% end %>
                 <% end %>
-                <%= content_tag :p do %><%= link_to ('learn more & raquo;'), {:li => "http://google.com"}, :class => 'btn btn-primary btn-project btn-outline', :id => "my-project" %><% end %>
-            <% end %>
+            </div>
         <% end %>
     <% end %>
-<% end %>
+<% end %><!-- END OF THE REGION-->

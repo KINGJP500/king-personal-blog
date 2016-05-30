@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+/** the feeback global variables **/
+$orange: #ff6a00;
+$blue: #fff;
+
 /** The contact page styling carousel **/
 .contact-carousel{
     padding: 0;
@@ -23,7 +27,7 @@
         top: 50%;
         margin-top: -193px;
         text-align: center;
-        color: #ff6a00;
+        color: $orange;
     }
     h1{
         font-family: 'Orbitron', sans-serif;

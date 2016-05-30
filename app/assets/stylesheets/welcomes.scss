@@ -346,10 +346,39 @@ hr.star-light{
     padding: 60px 0 100px 0;
     text-align: center;
     /*background-color: deepskyblue;*/
-    p{
+    .plan_wrapper{
        text-align: center;
+       margin: 3rem 0;
    }
+   .design_wrapper{
+      text-align: center;
+      margin: 3rem 0;
+  }
+  .develop_wrapper{
+     text-align: center;
+     margin: 3rem 0;
+ }
+ .launch_wrapper{
+    text-align: center;
+    margin: 3rem 0;
+}
    h1{
       text-align: center;
   }
+}
+
+
+// -----------------Global styles------------------------//
+.button{
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    padding: .5rem 2rem;
+    font-weight: 700;
+    color: $white;
+    text-decoration: none;
+    text-align: center;
+}
+.button_outline{
+    background: $b-blue;
 }
