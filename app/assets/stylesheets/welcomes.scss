@@ -13,7 +13,8 @@ hr.star-light{
     margin: 25px auto 30px;
 }
 
-/* the home carousel of the page */
+/******************* The home carousel of the page *********************************************/
+
 .home_carousel {
     padding-left: 0;
     padding-right: 0;
@@ -71,7 +72,7 @@ hr.star-light{
     transition: background .3s ease-in-out;
 }
 
-/*This the service-icon content of the web development */
+/********************************This the service-icon content of the web development ******************************************/
 .service_icon{
     padding: 5em 0  0;
     h1{
@@ -110,7 +111,7 @@ hr.star-light{
 }
 
 
-/* The top article of the page content */
+//*********************************** The top article of the page content ************************************//
 .top_article{
     padding: 5em 0 0;
     /*background-color: #0026ff;*/
@@ -126,36 +127,79 @@ hr.star-light{
        h1{
             text-align: center;
         }
-        .phone-emulator{
-           height: 411px;
-           width: 100%;
-           background-image: url();
-           background-position: center bottom;
-           background-repeat: no-repeat;
+    }
+}
+
+//-----------------------------------The web carousel page -------------------------------------------------//
+.the_web_emulator{
+   height: 425px;
+   width: 100%;
+   padding: 2rem 0 6.5rem 0;
+   //background-position: center bottom;//
+   background-image: url(doctype-hi-res.jpg);
+   background-repeat: no-repeat;
+   //position: relative;
+   //top: 200px;
+   //margin-top: -159px;
+   -moz-transform: all 0.3s ease;
+   -o-transofrm: all 0.3s ease;
+   -webkit-transform: all 0.3s ease;
+   transform: all 0.3s ease;
+   -webkit-transform-style: preserve-3d;
+   transform-style: preserve-3d;
+   text-align: center;
+    .the_display{
+        .img{
+            position: relative;
+        }
+        .img-responsive {
+        display: inline;
+        max-width: 100%;
+        height: auto;}
+        .responsive_device{
+            width: 50%;
+            position: relative;
+        }
+        .desk{
+            width: 40%;
+            position: relative;
+        }
+        .laptop{
+            width: 30%;
+            position: relative;
+            left: -15px;
+            top: 7rem;
+        }
+        .tablet{
+            width: 20%;
+            position: relative;
+            right: -8%;
+            z-index: 2;
+        }
+        .phone{
+            width: 10%;
            position: relative;
-           top: 200px;
-           margin-top: -159px;
-           -moz-transform: all 0.3s ease;
-           -o-transofrm: all 0.3s ease;
-           -webkit-transform: all 0.3s ease;
-           transform: all 0.3s ease;
-           -webkit-transform-style: preserve-3d;
-           transform-style: preserve-3d;
-           text-align: center;
-       }
+        }
     }
 }
 
 
-/*This is the first home work picture of my design*/
+//********************************This is the first home work picture of my design*********************************//
 .home_work_pic{
+    //-moz-box-shadow: 0 0 0 1px #fff;
+    //-webkit-box-shadow: 0 0 0 1px #fff;
+    //box-shadow: 0 0 0 1px #fff;
     padding: 5em 0 0;
     margin-bottom: 100px;
-    /*background-color: #00ff90;*/
+    background-color: #00ff90;
+    //min-height: 350px;
+  //overflow: hidden;
+  //position: relative;
+  /*visibility: hidden;*/
     h1{
         text-align: center;
     }
-    /*The picture is being parallex*/
+    /**************************************The picture is being parallex***********************************************/
     figure{
         margin-bottom: 20px;
         padding: 0 10px;
@@ -222,7 +266,7 @@ hr.star-light{
 
 }
 
-/* the works top artcle */
+/************************ the works top artcle ******************************/
 .works_top_article{
     article{
        padding: 20px 0 0;
@@ -239,7 +283,7 @@ hr.star-light{
    }
 }
 
-/* the other section of the works flow */
+/************************************ The other section of the works flow ************************************************/
 .b_home_work_pic{
     padding: 5em 0 0;
     margin-bottom: 100px;
@@ -247,7 +291,7 @@ hr.star-light{
     h1{
         text-align: center;
     }
-    /*The picture is being parallex*/
+    /****************************************The picture is being parallex*************************************/
     figure{
         margin-bottom: 20px;
         padding: 0 10px;
@@ -314,7 +358,7 @@ hr.star-light{
 
 }
 
-/* The bottom homepage article of the page */
+/*******************************The bottom homepage article of the page **********************************************/
 .bottom_article{
     position: relative;
     /*padding: 100px 0;*/
@@ -332,7 +376,7 @@ hr.star-light{
    }
 }
 
-/*The pc-carousel sliding from left to right */
+/***********************8The pc-carousel sliding from left to right **************************************/
 .desk_carousel_emulator{
     height: 100%;
     width: 100%;
@@ -368,7 +412,7 @@ hr.star-light{
 }
 
 
-// -----------------Global styles------------------------//
+// ------------------------------------------Global styles--------------------------------------------------------------------------//
 .button{
     border: none;
     outline: none;
@@ -382,3 +426,23 @@ hr.star-light{
 .button_outline{
     background: $b-blue;
 }
+//*{
+    //box-sizing: border-box;
+//}//
+//.work:nth-child(1) {
+    //-moz-animation-delay: 0.1s;
+    //-webkit-animation-delay: 0.1s;
+    //animation-delay: 0.1s;
+//}
+//.no-gutter [class*=col-] {
+    //padding-right: 0;
+    //padding-left: 0;
+//}
+//.animated{
+    //visibility: visible;
+//.no_padding{
+    //padding: 0;
+//}
+//.sections{
+    //padding: 100px 0;
+//

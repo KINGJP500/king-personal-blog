@@ -38,8 +38,8 @@
             <%= content_tag :h1 do %>Ruby on Rails<% end %>
             <%= content_tag :p, class: "lead" do %>Rails is a web Framework<% end %>
             <%= content_tag :p, class: "m-button" do %>
-                <%= link_to ('Learn more &raquo;'), {:href => 'http://asp.net'}, :class => "btn btn-primary btn-lg" %>
-                <%= link_to ('Learn more &raquo;'), {:href => 'http://asp.net'}, :class => "btn btn-primary btn-lg" %>
+                <%= content_tag :p, class: "plan_wrapper" do %><%= link_to ('learn more'), {:li => "http://google.com"}, :class => 'button button_outline', :id => "my_plan" %><% end %>
+                <%= content_tag :p, class: "plan_wrapper" do %><%= link_to ('learn more'), {:li => "http://google.com"}, :class => 'button button_outline', :id => "my_plan" %><% end %>
             <% end %>
         <% end %>
     </div>
