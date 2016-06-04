@@ -7,9 +7,9 @@ hr.star-light{
 hr.star-light{
     padding: 0;
     border: none;
-    border-top: solid 3px;
+    border-top: solid 1px;
     text-align: center;
-    max-width: 200px;
+    max-width: 100px;
     margin: 25px auto 30px;
 }
 
@@ -72,6 +72,7 @@ hr.star-light{
     transition: background .3s ease-in-out;
 }
 
+
 /********************************This the service-icon content of the web development ******************************************/
 .service_icon{
     padding: 5em 0  0;
@@ -112,14 +113,16 @@ hr.star-light{
 
 
 //*********************************** The top article of the page content ************************************//
+
 .top_article{
-    padding: 5em 0 0;
+    padding: 10rem 0 0;
     /*background-color: #0026ff;*/
     article{
         /*padding: 100px 0 0;*/
         max-width: 640px;
         margin: 0 auto;
         text-align: center;
+        webkit
         p{
             padding: .5em;
            text-align: center;
@@ -134,9 +137,10 @@ hr.star-light{
 .the_web_emulator{
    height: 425px;
    width: 100%;
-   padding: 2rem 0 6.5rem 0;
+   padding: 10rem 0 6.5rem 0;
    //background-position: center bottom;//
    background-image: url(doctype-hi-res.jpg);
+   -webkit-background-image: url(doctype-hi-res.jpg);
    background-repeat: no-repeat;
    //position: relative;
    //top: 200px;
@@ -189,8 +193,8 @@ hr.star-light{
     //-moz-box-shadow: 0 0 0 1px #fff;
     //-webkit-box-shadow: 0 0 0 1px #fff;
     //box-shadow: 0 0 0 1px #fff;
-    padding: 5em 0 0;
-    margin-bottom: 100px;
+    padding: 10rem 0 0;
+    // margin-bottom: 100px;
     background-color: #00ff90;
     //min-height: 350px;
   //overflow: hidden;
@@ -266,8 +270,10 @@ hr.star-light{
 
 }
 
+
 /************************ the works top artcle ******************************/
 .works_top_article{
+    padding: 10rem 0 0;
     article{
        padding: 20px 0 0;
        max-width: 640px;
@@ -283,10 +289,10 @@ hr.star-light{
    }
 }
 
+
 /************************************ The other section of the works flow ************************************************/
 .b_home_work_pic{
-    padding: 5em 0 0;
-    margin-bottom: 100px;
+    padding: 10rem 0 0;
     /*background-color: #00ff90;*/
     h1{
         text-align: center;
@@ -358,10 +364,11 @@ hr.star-light{
 
 }
 
+
 /*******************************The bottom homepage article of the page **********************************************/
 .bottom_article{
     position: relative;
-    /*padding: 100px 0;*/
+    padding: 10rem 0 0;
     article{
        /*padding: 100px 0;*/
        max-width: 640px;
@@ -387,25 +394,23 @@ hr.star-light{
 }
 
 .bottom_region{
-    padding: 60px 0 100px 0;
+    padding: 10em 0;
     text-align: center;
     /*background-color: deepskyblue;*/
-    .plan_wrapper{
+    .features_content{
+        margin-top: 30px;
+        padding: 0 15px;
+        .prg{
+            line-height: 2em;
+            font-weight: 400;
+            font-size: 14px;
+
+        }
+    }
+    .service_plan_wrapper{
        text-align: center;
        margin: 3rem 0;
    }
-   .design_wrapper{
-      text-align: center;
-      margin: 3rem 0;
-  }
-  .develop_wrapper{
-     text-align: center;
-     margin: 3rem 0;
- }
- .launch_wrapper{
-    text-align: center;
-    margin: 3rem 0;
-}
    h1{
       text-align: center;
   }
