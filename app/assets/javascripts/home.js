@@ -18,7 +18,7 @@ $(window).scroll(function (){
         $('.b_home_work_pic figure').each(function (i){
 
             setTimeout(function(){
-                $('.b_home_work_pic figure').eq(i).addClass('is-showing');
+                $('.b_home_work_pic figure').eq(i).addClass('is-showing_2');
             }, (700 * (Math.exp(i * 0.14))) - 700);
         });
     }

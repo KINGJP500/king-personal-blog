@@ -27,6 +27,7 @@
                     <%= content_tag :p do %>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<% end %>
                 <% end %>
             <% end %>
+            <div class="carousel_gradient"></div>
         <% end %>
         <div  class="left carousel-control" href="#my-carousel", data-slide= "prev">
             <%= content_tag :span, class: "glyphicon glyphicon-chevron-left" do %><% end %>
@@ -38,7 +39,7 @@
             <%= content_tag :h1 do %>Ruby on Rails<% end %>
             <%= content_tag :p, class: "lead" do %>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br>Rails is a web framework for application<% end %>
             <%= content_tag :ul, class: "list-inline-outline" do %>
-                <%= content_tag(:li, link_to((fa_icon("angle-double-down")), "http://google.com", :class  => 'btn btn-circle page-scroll', :id => "my-id")) %>
+                <%= link_to ('learn more'), {:li => "http://google.com"}, :class => 'main_btn main_btn-large', :id => "my_plan" %>
             <% end %>
         <% end %>
     </div>
@@ -48,10 +49,10 @@
 <%= content_tag :div, class: "service_icon" do %>
     <%= content_tag :div, class: "container" do %>
         <%= content_tag :div, class: "row" do %>
-            <%= content_tag :div, class: "col-xs-12 col-sm-4 col-md-4" do %>
+            <%= content_tag :div, class: "col-sm-4 col-md-3" do %>
                 <%= content_tag :div, class: "web_develop" do %>
                     <%= fa_stacked_icon "desktop", base: "square-o", class: "fa-3x" %>
-                    <%= content_tag :h1 do %>Section<% end %>
+                    <%= content_tag :h5 do %>Web Design<% end %>
                     <%= content_tag :hr, class: "star-light" do %><% end %>
                     <%= content_tag :p do %>
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -59,10 +60,10 @@
                     <% end %>
                 <% end %>
             <% end %>
-            <%= content_tag :div, class: "col-xs-12 col-sm-4 col-md-4" do %>
+            <%= content_tag :div, class: "col-sm-4 col-md-3" do %>
                 <%= content_tag :div, class: "photography" do %>
                     <%= fa_stacked_icon "windows", base: "square-o", class: "fa-3x" %>
-                    <%= content_tag :h1 do %>Section<% end %>
+                    <%= content_tag :h5 do %>Photography<% end %>
                     <%= content_tag :hr, class: "star-light" do %><% end %>
                     <%= content_tag :p do %>
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -70,19 +71,27 @@
                     <% end %>
                 <% end %>
             <% end %>
-            <%= content_tag :div, class: "col-xs-12 col-sm-4 col-md-4" do %>
+            <%= content_tag :div, class: "col-sm-4 col-md-3" do %>
+                <%= content_tag :div, class: "photography" do %>
+                    <%= fa_stacked_icon "windows", base: "square-o", class: "fa-3x" %>
+                    <%= content_tag :h5 do %>Photography<% end %>
+                    <%= content_tag :hr, class: "star-light" do %><% end %>
+                    <%= content_tag :p do %>
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    <% end %>
+                <% end %>
+            <% end %>
+            <%= content_tag :div, class: "col-sm-4 col-md-3" do %>
                 <%= content_tag :div, class:  "web_application" do %>
                     <%= fa_stacked_icon "code", base: "square-o", class: "fa-3x" %>
-                    <%= content_tag :h1 do %>Section<% end %>
+                    <%= content_tag :h5 do %>Web Development<% end %>
                     <%= content_tag :hr, class: "star-light" do %><% end %>
                     <%= content_tag :p do %>
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                         when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                     <% end %>
                 <% end %>
-            <% end %>
-            <%= content_tag :div, class: "" do %>
-
             <% end %>
         <% end %>
     <% end %>
@@ -106,11 +115,9 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="the_display">
+                    <h1>check me out</h1>
+                    <p> type specimen book</p>
                     <%= link_to image_tag("responsive_devices.png", alt: "the_tablet_emulator", class: "img-responsive responsive_device") %>
-                    <%#= link_to image_tag("tablet.png", alt: "the_tablet_emulator", class: "img-responsive tablet") %>
-                    <%#= link_to image_tag("desk.png", alt: "the_desk_emulator", class: "img-responsive desk") %>
-                    <%#= link_to image_tag("laptop.png", alt: "the _laptop_emulator", class: "img-responsive laptop") %>
-                    <%#= link_to image_tag("phone.png", alt: "the_phone_emulator", class: "img-responsive phone") %>
                 </div>
             </div>
         </div>
@@ -119,53 +126,98 @@
 
 <!-- this is the work section of the home work pic section showing the landing pages-->
 <%= content_tag :div, class: "home_work_pic sections no_padding" do %>
-    <%= content_tag :div, class: "container-fluid" do %>
+    <%= content_tag :div, class: "container" do %>
         <%= content_tag :h1 do %>Section<% end %>
         <%=  content_tag :hr, class: "star-light" do %><% end %>
-        <%= content_tag :div, class: "row no-gutter" do %>
-            <%#= content_tag :figure, class: "col-xs-6 col-sm-3 col-md-3" do %>
-            <%= content_tag :figure, class: "col-lg-3 col-sm-6 col-md-6" do %>
-                <%= image_tag("model1.jpg", alt:  "", class: "img-responsive") %>
-                <%= content_tag :figcaption do %>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    <%= content_tag :p, class: "plan_wrapper" do %><%= link_to ('learn more'), {:li => "http://google.com"}, :class => 'button button_outline', :id => "my_plan" %><% end %>
+        <div class="features_product">
+            <%= content_tag :div, class: "row no-gutters" do %>
+                <%= content_tag :figure, class: "col-xs-6 col-sm-3 col-md-3" do %>
+                <%#= content_tag :figure, class: "col-lg-3 col-sm-6 col-md-6" do %>
+                    <%= image_tag("model1.jpg", alt:  "", class: "img-responsive") %>
+                    <%= content_tag :figcaption do %>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        <%= content_tag :p, class: "plan_wrapper" do %><%= link_to ('learn more'), {:li => "http://google.com"}, :class => 'button button_outline', :id => "my_plan" %><% end %>
+                    <% end %>
+                <% end %>
+                <%= content_tag :figure, class: "col-xs-6 col-sm-3 col-md-3" do %>
+                <%#= content_tag :figure, class: "col-lg-3 col-sm-6 col-md-6" do %>
+                    <%= image_tag("model2.jpg", alt: "", class: "img-responsive") %>
+                    <%= content_tag :figcaption do %>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        <%= content_tag :p, class: "plan_wrapper" do %><%= link_to ('learn more'), {:li => "http://google.com"}, :class => 'button button_outline', :id => "my_plan" %><% end %>
+                    <% end %>
+                <% end %>
+                <%= content_tag :figure, class: "col-xs-6 col-sm-3 col-md-3" do %>
+                <%#= content_tag :figure, class: "col-lg-3 col-sm-6 col-md-6" do %>
+                    <%= image_tag("model3.jpg", alt: "", class: "img-responsive") %>
+                    <%= content_tag :figcaption do %>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        <%= content_tag :p, class: "plan_wrapper" do %><%= link_to ('learn more'), {:li => "http://google.com"}, :class => 'button button_outline', :id => "my_plan" %><% end %>
+                    <% end %>
+                <% end %>
+                <%= content_tag :figure, class: "col-xs-6 col-sm-3 col-md-3" do %>
+                <%#= content_tag :figure, class: "col-lg-3 col-sm-6 col-md-6" do %>
+                    <%= image_tag("model1.jpg", alt: "", class: "img-responsive") %>
+                    <%= content_tag :figcaption do %>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        <%= content_tag :p, class: "plan_wrapper" do %><%= link_to ('learn more'), {:li => "http://google.com"}, :class => 'button button_outline', :id => "my_plan" %><% end %>
+                    <% end %>
                 <% end %>
             <% end %>
-            <%#= content_tag :figure, class: "col-xs-6 col-sm-3 col-md-3" do %>
-            <%= content_tag :figure, class: "col-lg-3 col-sm-6 col-md-6" do %>
-                <%= image_tag("model2.jpg", alt: "", class: "img-responsive") %>
-                <%= content_tag :figcaption do %>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-            <%= content_tag :p, class: "plan_wrapper" do %><%= link_to ('learn more'), {:li => "http://google.com"}, :class => 'button button_outline', :id => "my_plan" %><% end %>
+            <%= content_tag :div, class: "row no-gutters" do %>
+                <%= content_tag :figure, class: "col-xs-6 col-sm-3 col-md-3" do %>
+                <%#= content_tag :figure, class: "col-lg-3 col-sm-6 col-md-6" do %>
+                    <%= image_tag("model1.jpg", alt:  "", class: "img-responsive") %>
+                    <%= content_tag :figcaption do %>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        <%= content_tag :p, class: "plan_wrapper" do %><%= link_to ('learn more'), {:li => "http://google.com"}, :class => 'button button_outline', :id => "my_plan" %><% end %>
+                    <% end %>
+                <% end %>
+                <%= content_tag :figure, class: "col-xs-6 col-sm-3 col-md-3" do %>
+                <%#= content_tag :figure, class: "col-lg-3 col-sm-6 col-md-6" do %>
+                    <%= image_tag("model2.jpg", alt: "", class: "img-responsive") %>
+                    <%= content_tag :figcaption do %>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        <%= content_tag :p, class: "plan_wrapper" do %><%= link_to ('learn more'), {:li => "http://google.com"}, :class => 'button button_outline', :id => "my_plan" %><% end %>
+                    <% end %>
+                <% end %>
+                <%= content_tag :figure, class: "col-xs-6 col-sm-3 col-md-3" do %>
+                <%#= content_tag :figure, class: "col-lg-3 col-sm-6 col-md-6" do %>
+                    <%= image_tag("model3.jpg", alt: "", class: "img-responsive") %>
+                    <%= content_tag :figcaption do %>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        <%= content_tag :p, class: "plan_wrapper" do %><%= link_to ('learn more'), {:li => "http://google.com"}, :class => 'button button_outline', :id => "my_plan" %><% end %>
+                    <% end %>
+                <% end %>
+                <%= content_tag :figure, class: "col-xs-6 col-sm-3 col-md-3" do %>
+                <%#= content_tag :figure, class: "col-lg-3 col-sm-6 col-md-6" do %>
+                    <%= image_tag("model1.jpg", alt: "", class: "img-responsive") %>
+                    <%= content_tag :figcaption do %>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        <%= content_tag :p, class: "plan_wrapper" do %><%= link_to ('learn more'), {:li => "http://google.com"}, :class => 'button button_outline', :id => "my_plan" %><% end %>
+                    <% end %>
                 <% end %>
             <% end %>
-            <%#= content_tag :figure, class: "col-xs-6 col-sm-3 col-md-3" do %>
-            <%= content_tag :figure, class: "col-lg-3 col-sm-6 col-md-6" do %>
-                <%= image_tag("model3.jpg", alt: "", class: "img-responsive") %>
-                <%= content_tag :figcaption do %>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                <%= content_tag :p, class: "plan_wrapper" do %><%= link_to ('learn more'), {:li => "http://google.com"}, :class => 'button button_outline', :id => "my_plan" %><% end %>
-                <% end %>
-            <% end %>
-            <%#= content_tag :figure, class: "col-xs-6 col-sm-3 col-md-3" do %>
-            <%= content_tag :figure, class: "col-lg-3 col-sm-6 col-md-6" do %>
-                <%= image_tag("model1.jpg", alt: "", class: "img-responsive") %>
-                <%= content_tag :figcaption do %>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    <%= content_tag :p, class: "plan_wrapper" do %><%= link_to ('learn more'), {:li => "http://google.com"}, :class => 'button button_outline', :id => "my_plan" %><% end %>
-                <% end %>
-            <% end %>
-        <% end %>
+        </div>
     <% end %>
-<% end %><!-- end of the other figcaption page -->
+<% end %>
+<!-- end of the other figcaption page-->
 
 <%= content_tag :div , class: "works_top_article" do  %>
     <%= content_tag :article do %>
@@ -176,12 +228,12 @@
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                 when an unknown printer took a galley of type and scrambled it to make a type specimen book.
             <% end %>
-    <% end %><!-- end of the work section pages -->
-<% end %>
+    <% end %>
+<% end %><!-- end of the work section pages -->
 
-<%= content_tag :div, class: "b_home_work_pic" do %>
+<!-- the other section of the home pic work-->
+<!-- <%= content_tag :div, class: "b_home_work_pic" do %>
     <%= content_tag :div, class: "container" do %>
-        <!-- the other section of the home pic work-->
         <%= content_tag :div, class: "row" do %>
             <%= content_tag :h1 do %>Section <% end %>
             <%= content_tag :hr, class: "star-light" do %><% end %>
@@ -223,7 +275,7 @@
             <% end %>
         <% end %>
     <% end %>
-<% end %>
+<% end %>--><!-- the other section of the home pic work-->
 
 
 <!-- the bottom article of the page with the desk emulator -->
@@ -239,7 +291,6 @@
             leap into electronic typesetting, remaining essentially unchanged.
         <% end %>
         <%= content_tag :div, class: "desk-carousel-emulator img-responsive" do %>
-
         <% end %>
     <% end %>
 <% end %><!-- end of the bottom page article -->
@@ -249,23 +300,23 @@
 <%= content_tag :div, class: "bottom_region" do %>
     <%= content_tag :div, class: "container" do  %>
         <%= content_tag :div, class: "row" do %>
-            <div class="plan">
-            <%= content_tag :div, class: "col-sm-4 col-md-3" do %>
-                <%= fa_stacked_icon "clock-o", base: "circle-thin", class: "fa-3x" %>
-                <%= content_tag :h2 do %>Plan<% end %>
-                <%= content_tag :hr, class: "star-light" do %><% end %>
-                <div class="features_content">
-                    <%= content_tag :p, class: "prg" do %>
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    <% end %>
-                    <%= content_tag :p, class: "plan_wrapper" do %><%= link_to ('learn more'), {:li => "http://google.com"}, :class => 'button button_outline', :id => "my_plan" %><% end %>
-                </div>
-            <% end %>
+            <div class="plan features_indent">
+                <%= content_tag :div, class: "col-sm-4 col-md-3" do %>
+                    <%= fa_stacked_icon "clock-o", base: "circle-thin", class: "fa-3x" %>
+                    <%= content_tag :h5 do %>Plan<% end %>
+                    <%= content_tag :hr, class: "star-light" do %><% end %>
+                    <div class="features_content">
+                        <%= content_tag :p, class: "prg" do %>
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        <% end %>
+                        <%= content_tag :p, class: "plan_wrapper" do %><%= link_to ('learn more'), {:li => "http://google.com"}, :class => 'button button_outline', :id => "my_plan" %><% end %>
+                    </div>
+                <% end %>
             </div>
-            <div class="design">
+            <div class="design features_indent">
                 <%= content_tag :div, class: "col-sm-4 col-md-3" do %>
                     <%= fa_stacked_icon "laptop", base: "circle-thin", class: "fa-3x" %>
-                    <%= content_tag :h2 do %>Design<% end %>
+                    <%= content_tag :h5 do %>Design<% end %>
                     <%= content_tag :hr, class: "star-light" do %><% end %>
                     <div class="features_content">
                         <%= content_tag :p, class: "prg" do %>
@@ -275,10 +326,10 @@
                     </div>
                 <% end %>
             </div>
-            <div class="develop">
+            <div class="develop features_indent">
                 <%= content_tag :div, class: "col-sm-4 col-md-3" do %>
                     <%= fa_stacked_icon "cog", base: "circle-thin", class: "fa-3x" %>
-                    <%= content_tag :h2 do %>Develop<% end %>
+                    <%= content_tag :h5 do %>Develop<% end %>
                     <%= content_tag :hr, class: "star-light" do %><% end %>
                     <div class="features_content">
                         <%= content_tag :p, class: "prg" do %>
@@ -288,10 +339,10 @@
                     </div>
                 <% end %>
             </div>
-            <div class="launch">
+            <div class="launch features_indent">
                 <%= content_tag :div, class: "col-sm-4 col-md-3" do %>
                     <%= fa_stacked_icon "cube",  base: "circle-thin", class: "fa-3x" %>
-                    <%= content_tag :h2 do %>Launch<% end %>
+                    <%= content_tag :h5 do %>Launch<% end %>
                     <%= content_tag :hr, class: "star-light" do %><% end %>
                     <div class="features_content">
                         <%= content_tag :p, class: "prg" do %>

@@ -22,4 +22,4 @@
 //= require portfolio
 //= require feedbacks
 //= require works
-//= require posts
+// = require posts

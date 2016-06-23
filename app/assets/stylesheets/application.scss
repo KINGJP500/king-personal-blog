@@ -15,10 +15,12 @@
  */
  @import "bootstrap-sprockets";
  @import "bootstrap";
- @import "footer";
+ @import "main/variables";
+ @import "main/buttons";
+ @import "main/footer";
  @import "welcomes";
- @import "header";
- @import "scaffolds";
+ @import "main/header";
+ @import "main/scaffolds";
  @import "feedbacks";
  @import "portfolio";
  @import "posts";

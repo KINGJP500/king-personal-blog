@@ -13,14 +13,14 @@ hr.star-light{
     margin: 25px auto 30px;
 }
 
-/******************* The home carousel of the page *********************************************/
+//----------------------------- The home carousel of the page -------------------------------------//
 
 .home_carousel {
     padding-left: 0;
     padding-right: 0;
-    margin-top: 50px;
+    // margin-top: 50px;
     margin-bottom: auto;
-    /*padding-bottom: 19px;*/
+    //background:  linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.15) 50%, rgba(255,255,255,0) 100%) 5%;
     #my-carousel{
        height: 500px;
        img{
@@ -37,6 +37,24 @@ hr.star-light{
        text-align: center;
        color: #ff6a00;
    }
+   .carousel_gradient{
+       height: 50.4rem;
+       width: 100%;
+       position: absolute;
+       top: 37.8%;
+       margin-top: -193px;
+       text-align: center;
+       color: #ff6a00;
+       background: linear-gradient(rgba(6, 21, 36, 0.86),rgba(6, 21, 36, 0.86));
+       background-position: center center;
+       -webkit-background-size: cover;
+       -moz-background-size: cover;
+       -o-background-size: cover;
+       background-size: cover;
+       background-position: center center;
+       background-repeat: no-repeat;
+
+   }
    h1{
      font-family: 'Orbitron', sans-serif;
      font-weight: 200;
@@ -48,32 +66,36 @@ hr.star-light{
 }
 
 
-.btn{
-    border-radius: 0;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 400;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-}
-.btn-circle {
-    width: 70px;
-    height: 70px;
-    margin-top: 15px;
-    padding: 7px 16px;
-    border: 2px solid #fff;
-    border-radius: 100%!important;
-    font-size: 40px;
-    color: green;
-    background: 0 0;
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
-}
+// .btn{
+//     border-radius: 0;
+//     text-transform: uppercase;
+//     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+//     font-weight: 400;
+//     -webkit-transition: all .3s ease-in-out;
+//     -moz-transition: all .3s ease-in-out;
+//     transition: all .3s ease-in-out;
+// }
+// .btn-circle {
+//     width: 70px;
+//     height: 70px;
+//     margin-top: 15px;
+//     padding: 7px 16px;
+//     border: 2px solid #fff;
+//     border-radius: 100%!important;
+//     font-size: 40px;
+//     color: green;
+//     background: 0 0;
+//     -webkit-transition: background .3s ease-in-out;
+//     -moz-transition: background .3s ease-in-out;
+//     transition: background .3s ease-in-out;
+// }
 
 
-/********************************This the service-icon content of the web development ******************************************/
+//---------------------------------------This the service-icon content of the web development------------------------------------//
+@mixin service_indent{
+    padding: .5em;
+    text-align: center;
+}
 .service_icon{
     padding: 5em 0  0;
     h1{
@@ -85,19 +107,11 @@ hr.star-light{
            color: #ff0000;
        }
    }
-   p{
-       padding: .5em;
-       text-align: center;
-   }
    .photography{
        text-align: center;
        :hover i.fa.fa-windows{
            color: #00ff90;
        }
-   }
-   p{
-       padding: .5em;
-       text-align: center;
    }
    .web_application{
        text-align: center;
@@ -106,23 +120,20 @@ hr.star-light{
        }
    }
    p{
-       padding: .5em;
-       text-align: center;
+       @include service_indent;
    }
 }
 
 
-//*********************************** The top article of the page content ************************************//
+//------------------------------------------ The top article of the page content ----------------------------------//
 
 .top_article{
     padding: 10rem 0 0;
-    /*background-color: #0026ff;*/
     article{
-        /*padding: 100px 0 0;*/
         max-width: 640px;
         margin: 0 auto;
         text-align: center;
-        webkit
+        //webkit
         p{
             padding: .5em;
            text-align: center;
@@ -135,23 +146,21 @@ hr.star-light{
 
 //-----------------------------------The web carousel page -------------------------------------------------//
 .the_web_emulator{
-   height: 425px;
-   width: 100%;
-   padding: 10rem 0 6.5rem 0;
-   //background-position: center bottom;//
-   background-image: url(doctype-hi-res.jpg);
-   -webkit-background-image: url(doctype-hi-res.jpg);
+   // min-height: auto;
+   // width: 100%;
+
+    text-align: center;
+   background: linear-gradient(
+      rgba(6, 21, 36, 0.86),
+      rgba(6, 21, 36, 0.86)
+    ), url(doctype-hi-res.jpg) 10%;
+   background-position: center center;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   background-position: center center;
    background-repeat: no-repeat;
-   //position: relative;
-   //top: 200px;
-   //margin-top: -159px;
-   -moz-transform: all 0.3s ease;
-   -o-transofrm: all 0.3s ease;
-   -webkit-transform: all 0.3s ease;
-   transform: all 0.3s ease;
-   -webkit-transform-style: preserve-3d;
-   transform-style: preserve-3d;
-   text-align: center;
     .the_display{
         .img{
             position: relative;
@@ -187,40 +196,50 @@ hr.star-light{
     }
 }
 
+//------------------------------------------global variables for the mixin of listing of works -------------------------------//
+@mixin figure_mixing{
+    margin-bottom: 20px;
+    padding: 0 10px;
+    position: relative;
+    opacity: 0;
+    -moz-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    -o-transform: translateX(30px);
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    cursor: pointer;
+}
+@mixin figcaption_mixing {
+    position: absolute;
+    bottom: 10px;
+    left: -850%;
+    background: black;
+    color: white;
+    font-size: 10px;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    padding: 2px 8px;
+}
 
-//********************************This is the first home work picture of my design*********************************//
+
+//-------------------------------This is the first home work picture of my design----------------------------------------------//
 .home_work_pic{
-    //-moz-box-shadow: 0 0 0 1px #fff;
-    //-webkit-box-shadow: 0 0 0 1px #fff;
-    //box-shadow: 0 0 0 1px #fff;
     padding: 10rem 0 0;
-    // margin-bottom: 100px;
-    background-color: #00ff90;
-    //min-height: 350px;
-  //overflow: hidden;
-  //position: relative;
-  /*visibility: hidden;*/
+    //background-color: #00ff90;
     h1{
         text-align: center;
     }
-    /**************************************The picture is being parallex***********************************************/
+    //-------------------------------------------The picture is being parallex----------------------------------------------------------//
     figure{
-        margin-bottom: 20px;
-        padding: 0 10px;
-        position: relative;
-        opacity: 0;
-        -moz-transform: translateX(30px);
-        -ms-transform: translateX(30px);
-        -o-transform: translateX(30px);
-        -webkit-transform: translateX(30px);
-        transform: translateX(30px);
-        -moz-transition: all 0.4s ease-in-out;
-        -o-transition: all 0.4s ease-in-out;
-        -webkit-transition: all 0.4s ease-in-out;
-        transition: all 0.4s ease-in-out;
-        overflow: hidden;
-        cursor: pointer;
-
+        @include figure_mixing;
         &.is-showing{
             opacity: 1;
             -moz-transform: translateX(0px);
@@ -254,24 +273,13 @@ hr.star-light{
             }
     }
     figcaption{
-    position: absolute;
-    bottom: 10px;
-    left: -850%;
-    background: black;
-    color: white;
-    font-size: 10px;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    text-align: center;
-    padding: 2px 8px;
+    @include figcaption_mixing;
     }
 
 }
 
 
-/************************ the works top artcle ******************************/
+//------------------------------------------- the works top artcle --------------------------------------//
 .works_top_article{
     padding: 10rem 0 0;
     article{
@@ -290,32 +298,17 @@ hr.star-light{
 }
 
 
-/************************************ The other section of the works flow ************************************************/
+//--------------------------------------------- The other section of the works flow ---------------------------------------------//
 .b_home_work_pic{
     padding: 10rem 0 0;
-    /*background-color: #00ff90;*/
     h1{
         text-align: center;
     }
-    /****************************************The picture is being parallex*************************************/
+    //---------------------------------------The picture is being parallex--------------------------------------------------//
     figure{
-        margin-bottom: 20px;
-        padding: 0 10px;
-        position: relative;
-        opacity: 0;
-        -moz-transform: translateX(30px);
-        -ms-transform: translateX(30px);
-        -o-transform: translateX(30px);
-        -webkit-transform: translateX(30px);
-        transform: translateX(30px);
-        -moz-transition: all 0.4s ease-in-out;
-        -o-transition: all 0.4s ease-in-out;
-        -webkit-transition: all 0.4s ease-in-out;
-        transition: all 0.4s ease-in-out;
-        overflow: hidden;
-        cursor: pointer;
+        @include figure_mixing;
 
-        &.is-showing{
+        &.is-showing_2{
             opacity: 1;
             -moz-transform: translateX(0px);
             -ms-trasform: translateX(0px);
@@ -348,34 +341,21 @@ hr.star-light{
             }
     }
     figcaption{
-    position: absolute;
-    bottom: 10px;
-    left: -850%;
-    background: black;
-    color: white;
-    font-size: 10px;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    text-align: center;
-    padding: 2px 8px;
+        @include figcaption_mixing;
     }
 
 }
 
 
-/*******************************The bottom homepage article of the page **********************************************/
+//-----------------------------------------The bottom homepage article of the page-------------------------------------------//
 .bottom_article{
     position: relative;
     padding: 10rem 0 0;
     article{
-       /*padding: 100px 0;*/
        max-width: 640px;
        margin: 0 auto;
        text-align: center;
        position: relative;
-       /*background-color: green;*/
        p{
            text-align: center;
            padding: .5em;
@@ -383,7 +363,7 @@ hr.star-light{
    }
 }
 
-/***********************8The pc-carousel sliding from left to right **************************************/
+//--------------------------------------The pc-carousel sliding from left to right --------------------------------------------//
 .desk_carousel_emulator{
     height: 100%;
     width: 100%;
@@ -396,7 +376,6 @@ hr.star-light{
 .bottom_region{
     padding: 10em 0;
     text-align: center;
-    /*background-color: deepskyblue;*/
     .features_content{
         margin-top: 30px;
         padding: 0 15px;
@@ -404,7 +383,6 @@ hr.star-light{
             line-height: 2em;
             font-weight: 400;
             font-size: 14px;
-
         }
     }
     .service_plan_wrapper{
@@ -414,40 +392,7 @@ hr.star-light{
    h1{
       text-align: center;
   }
+  .features_indents{
+      margin-bottom: 2rem;
+  }
 }
-
-
-// ------------------------------------------Global styles--------------------------------------------------------------------------//
-.button{
-    border: none;
-    outline: none;
-    border-radius: 2rem;
-    padding: .5rem 2rem;
-    font-weight: 700;
-    color: $white;
-    text-decoration: none;
-    text-align: center;
-}
-.button_outline{
-    background: $b-blue;
-}
-//*{
-    //box-sizing: border-box;
-//}//
-//.work:nth-child(1) {
-    //-moz-animation-delay: 0.1s;
-    //-webkit-animation-delay: 0.1s;
-    //animation-delay: 0.1s;
-//}
-//.no-gutter [class*=col-] {
-    //padding-right: 0;
-    //padding-left: 0;
-//}
-//.animated{
-    //visibility: visible;
-//.no_padding{
-    //padding: 0;
-//}
-//.sections{
-    //padding: 100px 0;
-//

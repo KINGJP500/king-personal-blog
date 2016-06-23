@@ -1,9 +1,3 @@
-/*****************The footer variables**************************/
-$white: #ffffff;
-$b_blue: #2c3e50;
-$d_blue: #021426;
-
-
 /*
 * This the foooter button of the page
 */
@@ -68,10 +62,11 @@ footer {
 a, a:hover, a:focus, a:active, a.active {
     color: #18bc9c;
     outline :none;
+    text-decoration: none;
 }
-.input-group-btn{
-    background-color: #1abc9c;
-}
+// .input-group-btn{
+//     background-color: #1abc9c;
+// }
 
 
 .button.button-primary,
