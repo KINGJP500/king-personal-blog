@@ -38,7 +38,8 @@
             <%= content_tag :h1 do %>Ruby on Rails<% end %>
             <%= content_tag :p, class: "lead" do %>Rails is web framework for applicatioon<% end %>
             <%= content_tag :p, class: "m-button" do %>
-                <%= content_tag(:li, link_to((fa_icon("fa-angle-double-down")), "http://google.com", :class => 'btn btn-circle page-scroll', :id => "my-id")) %>
+            <%= link_to ('learn more'), {:li => "http://google.com"}, :class => 'main_btn main_btn-large', :id => "my_plan" %>
+            <%= link_to ('learn more'), {:li => "http://google.com"}, :class => 'main_btn main_btn-large', :id => "my_plan" %>
             <% end %>
         <% end %>
     </div>
@@ -47,14 +48,14 @@
 <!-- the why choosing us contact section -->
 <div class="choosing-contact">
     <%= content_tag :div, class: "container" do %>
-        <%= content_tag :h2 do %>Why Choosing me<% end %>
+        <%= content_tag :h1 do %>Why Choosing me<% end %>
         <hr class="star-light">
         <%= content_tag :div, class: "contact-project" do %>
             <%= content_tag :div, class: "row" do %>
                 <%= content_tag :div, class: "col-xs-12 col-sm-4 col-md-4" do %>
                     <%= content_tag :div, class: "ui-ux-design" do %>
                         <%= fa_icon "desktop", class: "fa-3x" %>
-                        <%= content_tag :h1 do %>UI UX DESIGN<% end %>
+                        <%= content_tag :h5 do %>UI UX DESIGN<% end %>
                         <hr class="star-light">
                             <%= content_tag :p do %>
                                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -65,7 +66,7 @@
                 <%= content_tag :div, class: "col-xs-12 col-sm-4 col-md-4" do%>
                     <%= content_tag :div, class: "ios-android" do %>
                         <%= fa_icon "desktop", class: "fa-3x" %>
-                        <%= content_tag :h1 do %>IOS & Android<% end %>
+                        <%= content_tag :h5 do %>IOS & Android<% end %>
                         <hr class="star-light">
                             <%= content_tag :p do %>
                                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -76,7 +77,7 @@
                 <%= content_tag :div, class: "col-xs-12 col-sm-4 col-md-4" do %>
                     <%= content_tag :div, class: "quality-assurance" do %>
                         <%= fa_icon "desktop", class: "fa-3x" %>
-                        <%= content_tag :h1 do %>Quality Assurance<% end %>
+                        <%= content_tag :h5 do %>Quality Assurance<% end %>
                         <hr class="star-light">
                             <%= content_tag :p do %>
                                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -92,10 +93,10 @@
 <!-- the contact section -->
 <div class="contacts-form below">
     <%= content_tag :div, class: "container" do %>
-        <%= content_tag :h2 do %>CONTACT US AND GET A FREE QUOTE<% end %>
+        <%= content_tag :h1 do %>CONTACT US AND GET A FREE QUOTE<% end %>
         <hr class="star-light">
         <%= content_tag :div, class: "row" do %>
-            <%= content_tag :div, class: "col-xs-12 col-sm-12 col-md-10 col-md-offset-1" do %>
+            <%= content_tag :div, class: "col-xs-12 col-sm-12 col-md-6 col-md-offset-3" do %>
                 <%= render 'feedbacks/form' %>
             <% end %>
         <% end %>

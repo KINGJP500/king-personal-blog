@@ -17,47 +17,49 @@
     <%# end %>
     <fieldset>
         <legend>Legend</legend>
-        <div class="form-group" id="form-name">
-            <%= f.label :name, class: "col-lg-2 control-label", id: "name" %><br>
-            <div class="col-lg-10">
-                <%= f.text_field :name, required: true, :placeholder => "Name", :id => "input_name", :class => "form-control" %>
+        <div class="form_center" style="center">
+            <div class="form-group" id="form-name">
+                <%= f.label :name, class: "col-lg-2 control-label", id: "name" %>
+                <div class="col-lg-10">
+                    <%= f.text_field :name, required: true, :placeholder => "Name", :id => "input_name", :class => "form-control" %>
+                </div>
             </div>
-        </div>
-        <div class="form-group" id="form-email">
-            <%= f.label :email, class: "col-lg-2 control-label", id: "email" %>
-            <div class="col-lg-10">
-                <%= f.email_field :email, required: true, placeholder: "Email", id: "input_email", class: "form-control" %>
+            <div class="form-group" id="form-email">
+                <%= f.label :email, class: "col-lg-2 control-label", id: "email" %>
+                <div class="col-lg-10">
+                    <%= f.email_field :email, required: true, placeholder: "Email", id: "input_email", class: "form-control" %>
+                </div>
             </div>
-        </div>
-        <div class="form-group" id="form-phone_number">
-            <%= f.label :phone_number, class: "col-lg-2 control-label", id: "phone_number" %>
-            <div class="col-lg-10">
-                <%= f.telephone_field :phone_number, required: true, class: "form-control", id: "input_phone_number", placeholder: "Telphone number" %>
+            <div class="form-group" id="form-phone_number">
+                <%= f.label :phone_number, class: "col-lg-2 control-label", id: "phone_number" %>
+                <div class="col-lg-10">
+                    <%= f.telephone_field :phone_number, required: true, class: "form-control", id: "input_phone_number", placeholder: "Telphone number" %>
+                </div>
             </div>
-        </div>
-        <div class="form-group" id="form-company">
-            <%= f.label :company, class: "col-lg-2 control-label", id: "company" %>
-            <div class="col-lg-10">
-                <%= f.text_field :company, required: true, class: "form-control", id: "input_company", placeholder: "company name" %>
+            <div class="form-group" id="form-company">
+                <%= f.label :company, class: "col-lg-2 control-label", id: "company" %>
+                <div class="col-lg-10">
+                    <%= f.text_field :company, required: true, class: "form-control", id: "input_company", placeholder: "company name" %>
+                </div>
             </div>
-        </div>
-        <div class="form-group" id="form-location">
-            <%= f.label :location, class: "col-lg-2 control-label", id: "location" %>
-            <div class="col-lg-10">
-                <%= f.text_field :location, required: true, class: "form-control", id: "input_location", placeholder: "current location" %>
+            <div class="form-group" id="form-location">
+                <%= f.label :location, class: "col-lg-2 control-label", id: "location" %>
+                <div class="col-lg-10">
+                    <%= f.text_field :location, required: true, class: "form-control", id: "input_location", placeholder: "current location" %>
+                </div>
             </div>
-        </div>
-        <div class="form-group" id="form-description">
-            <%= f.label :description, class: "col-lg-2 control-label", id: "description" %>
-            <div class="col-lg-10">
-                <%= f.text_area :description, required: true, class: "form-control", rows: "5", id:  "textArea" %>
+            <div class="form-group" id="form-description">
+                <%= f.label :description, class: "col-lg-2 control-label", id: "description" %>
+                <div class="col-lg-10">
+                    <%= f.text_area :description, required: true, class: "form-control", rows: "5", id:  "textArea" %>
+                </div>
             </div>
-        </div>
-        <div class="form-group" id="form-submit">
-            <div class="col-lg-10 col-lg-offset-2">
-                <%#= f.destroy :Cancel, :class => "btn btn-default" %>
-                <button type="reset" class="btn btn-default">Cancel</button>
-                <%= f.submit :Submit, :class => "btn btn-primary", :id => "submit-btn" %>
+            <div class="form-group" id="form-submit">
+                <div class="col-lg-10 col-lg-offset-2">
+                    <%#= f.destroy :Cancel, :class => "btn btn-default" %>
+                    <button type="reset" class="btn btn-default">Cancel</button>
+                    <%= f.submit :Submit, :class => "btn btn-primary", :id => "submit-btn" %>
+                </div>
             </div>
         </div>
     </fieldset>

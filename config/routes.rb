@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   get "portfolio", to: "welcomes#portfolio"
   #
   #get 'welcomes/works'
-  get "works", to: "welcomes#works"
+  get "works", to: "works#index"
   #
   get "services", to: "welcomes#services"
   #

@@ -43,7 +43,7 @@ $blue: #fff;
 /* the choosing contact section of the contact page */
 .choosing-contact{
     padding: 20px  0;
-    h2{
+    h1{
         text-align: center;
     }
     .contact-project{
@@ -52,16 +52,10 @@ $blue: #fff;
             padding: .5em;
             text-align: center;
         }
-        h1{
+        h5{
             text-align: center;
         }
-        .ui-ux-design{
-            text-align: center;
-        }
-        .ios-android{
-            text-align: center;
-        }
-        .quality-assurance{
+        .ui-ux-design, .ios-android, .quality-assurance  {
             text-align: center;
         }
     }
@@ -69,8 +63,9 @@ $blue: #fff;
 
 /* the contacts form below of the contacts page */
 .contacts-form.below{
+    background-color: $button-color;
     padding-top: 70px;
-    h2{
+    h1{
         text-align: center;
     }
     form{
@@ -78,7 +73,7 @@ $blue: #fff;
             legend{
                 text-align: center;
             }
-            #inputName.form-control{
+            #inpustName.form-control{
                 text-align: center;
                 /** input[type="text"]{width: 100%;}**/
             }

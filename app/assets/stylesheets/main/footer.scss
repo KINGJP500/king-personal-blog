@@ -20,9 +20,11 @@ footer {
     .social-icon{
         h3{
            text-align: center;
+           color: $white;
        }
        p{
           text-align: center;
+          color: $white;
       }
    }
    h3,h1{
@@ -32,6 +34,9 @@ footer {
        background-color: $d_blue;
        /*background: linear-gradient(to top, #E47D7D 0%, #C195D3 50%, #4FB4E8 100%);*/
         /*background: -webkit-linear-gradient(to top, #E47D7D 0%, #C195D3 50%, #4FB4E8 100%);*/
+        p{
+            color: $white;
+        }
    }
 }
 
@@ -59,11 +64,11 @@ footer {
     transition: all 0.3s ease-in-out;
     margin-top: 15px;
 }
-a, a:hover, a:focus, a:active, a.active {
-    color: #18bc9c;
-    outline :none;
-    text-decoration: none;
-}
+// a, a:hover, a:focus, a:active, a.active {
+//     color: #18bc9c;
+//     outline :none;
+//     text-decoration: none;
+// }
 // .input-group-btn{
 //     background-color: #1abc9c;
 // }

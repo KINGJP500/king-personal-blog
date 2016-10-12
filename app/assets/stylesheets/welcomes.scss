@@ -31,9 +31,9 @@ hr.star-light{
    .home_carousel_content {
        height: 100px;
        width: 100%;
-       position: absolute;
+       position: relative;//absolute;
        top: 50%;
-       margin-top: -193px;
+       margin-top: -448px;// -193px;
        text-align: center;
        color: #ff6a00;
    }

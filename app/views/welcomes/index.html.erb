@@ -35,13 +35,15 @@
         <div class="right carousel-control" href="#my-carousel" data-slide="next">
             <%= content_tag :span, class: "glyphicon glyphicon-chevron-right" do %><% end %>
         </div>
-        <%= content_tag :div, class: "home_carousel_content" do %>
-            <%= content_tag :h1 do %>Ruby on Rails<% end %>
-            <%= content_tag :p, class: "lead" do %>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br>Rails is a web framework for application<% end %>
-            <%= content_tag :ul, class: "list-inline-outline" do %>
-                <%= link_to ('learn more'), {:li => "http://google.com"}, :class => 'main_btn main_btn-large', :id => "my_plan" %>
+        <div class="container">
+            <%= content_tag :div, class: "home_carousel_content" do %>
+                <%= content_tag :h1 do %>Ruby on Rails<% end %>
+                <%= content_tag :p, class: "lead" do %>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br>Rails is a web framework for application<% end %>
+                <%= content_tag :ul, class: "list-inline-outline" do %>
+                    <%= link_to ('learn more'), {:li => "http://google.com"}, :class => 'main_btn main_btn-large', :id => "my_plan" %>
+                <% end %>
             <% end %>
-        <% end %>
+        </div>
     </div>
 <% end %><!-- end of the carousel page -->
 
